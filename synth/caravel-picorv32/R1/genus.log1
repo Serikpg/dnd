@@ -1,0 +1,773 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2023 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:58:28.046594] Configured Lic search path (21.01-s002): 1717@seesemi.upc.edu:5280@blendedP.upc.edu
+
+Version: 22.13-s093_1, built Tue Sep 05 08:56:02 PDT 2023
+Options: 
+Date:    Mon Apr 13 18:58:28 2026
+Host:    c4d3 (x86_64 w/Linux 4.18.0-553.56.1.el8_10.x86_64) (16cores*24cpus*1physical cpu*13th Gen Intel(R) Core(TM) i7-13700 30720KB) (32577160KB)
+PID:     9590
+OS:      Rocky Linux release 8.10 (Green Obsidian)
+
+Checking out license: Genus_Synthesis
+[18:58:28.098858] Periodic Lic check successful
+[18:58:28.098858] Feature usage summary:
+[18:58:28.098858] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 951 days old.
+@genus:root: 1> read_db reports_Apr13-18:47:39/mgmt_core_wrapper_m
+Reading database file 'reports_Apr13-18:47:39/mgmt_core_wrapper_m'.
+Warning : Could not open file. [TUI-504]
+        : Cannot open file 'reports_Apr13-18:47:39/mgmt_core_wrapper_m' for reading: No such file or directory.
+        : Check permissions of the file and directory.
+1
+@genus:root: 2> read_db out_Apr13-18:47:39/mgmt_core_wrapper_m
+%# Begin ::stylus_db::read (04/13 18:59:18, mem=1349.90M)
+(stylus_db): Argument checking
+(stylus_db): Determining DB Schema from 'out_Apr13-18:47:39/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.sql'.
+(stylus_db): Reading Native DB: /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/out_Apr13-18:47:39/mgmt_core_wrapper_m/syn/mgmt_core_wrapper.db
+Reading database file '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/out_Apr13-18:47:39/mgmt_core_wrapper_m/syn/mgmt_core_wrapper.db'.
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib, Line 67517)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/../macros/ram_128_1v1_0C.lib, Line 5)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'define' encountered. Ignoring (File /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/../macros/ram_128_1v1_0C.lib, Line 300)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'define' encountered. Ignoring (File /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/../macros/ram_128_1v1_0C.lib, Line 301)
+
+Reading library /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.libInfo    : Appending library. [LBR-3]
+        : Appending library 'fast_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+        : Appending libraries will overwrite some of the characteristics of the library.
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 3574)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 3578)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 3684)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 3688)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 4486)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 4490)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 4596)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 4600)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6358)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6362)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6366)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6370)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6476)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6480)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3N' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6484)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4N' for the cell 'SDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 6488)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8262)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8266)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8270)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8274)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8380)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8384)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3N' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8388)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4N' for the cell 'SDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 8392)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SPDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9046)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SPDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9050)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SPDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9156)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SPDFF2RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9160)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SPDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9810)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SPDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9814)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SPDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9920)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SPDFF2RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 9924)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10574)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10578)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10582)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10586)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10692)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10696)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3N' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10700)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4N' for the cell 'SPDFF4RX1'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 10704)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11386)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11390)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11394)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11398)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q1N' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11504)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q2N' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11508)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q3N' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11512)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Q4N' for the cell 'SPDFF4RX2'. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib, Line 11516)
+
+  Message Summary for Library all 3 libraries:
+  ********************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 49
+  An unsupported construct was detected in this library. [LBR-40]: 3
+  Appending library. [LBR-3]: 1
+  ********************************************
+ 
+            Reading file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib'
+            Reading file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib'
+            Reading file '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/../macros/ram_128_1v1_0C.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_multibitsDFF.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'ram_128_1v1_0C.lib'.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[0]' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[1]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[2]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[3]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[4]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[5]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[6]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[7]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[8]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[9]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[10]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[11]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[12]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[13]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[14]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[15]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[16]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[17]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[18]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[19]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[20]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[21]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[22]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[23]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[24]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[25]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[26]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[27]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[28]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[29]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[30]' has no function.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'scm_128x32/data_o[31]' has no function.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRX1' has invalid (or complex) clock function.
+        : The sequential cell cannot be inferred because its clock function is unknown.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRX1' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRX2' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRX2' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRX4' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRX4' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRXL' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATNSRXL' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRX1' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRX1' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRX2' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRX2' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRX4' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRX4' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRXL' has invalid (or complex) clock function.
+Warning : Clock function definition makes cell unusable. [LBR-141]
+        : Sequential cell 'TLATSRXL' has invalid (or complex) clock function.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HV' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_M_EV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_M_WV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M5_M4_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M6_M5_VV' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '40' reached for message 'PHYS-129'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF2RX1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF2RX2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF2X1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF2X2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF4RX1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF4RX2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF4X1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'DFF4X2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SDFF2RX1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SDFF2RX2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SDFF4RX1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SDFF4RX2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SPDFF2RX1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SPDFF2RX2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SPDFF4RX1' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+Warning : Duplicate macro definition. [PHYS-107]
+        : Macro 'SPDFF4RX2' is already defined. Ignoring this definition in file '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef'.
+
+  According to lef_library, there are total 11 routing layers [ V(5) / H(6) ]
+
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL1 cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL16 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL2 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL32 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL4 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL64 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILL8 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FSWNX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FSWX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWDNX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWDX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWNX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell HSWX1 cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISOHLDX1_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISOHLDX1_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISOHX1_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISOHX1_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISOLX1_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISOLX1_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISONLX1_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell ISONLX1_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISOH_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISOH_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISOL_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISOL_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISONH_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISONH_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISONL_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHL_ISONL_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHLX1_FROM cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSHLX1_TO cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISOH_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISOH_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISOL_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISOL_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISONH_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISONH_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISONL_X1_FROM_OFF cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLH_ISONL_X1_TO_ON cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell LSLHX1_FROM cannot be found in library.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '40' reached for message 'PHYS-279'.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VSS' of library cell 'scm_128x32' is marked as GROUND in LEF file.
+        : Overriding lib value with LEF value. To use .lib as golden do: '::legacy::set_attribute use_power_ground_pin_from_lef false'.
+Warning : Library cell pin 'use' attribute is inconsistent between lib and LEF. [PHYS-128]
+        : Pin 'VDD' of library cell 'scm_128x32' is marked as POWER in LEF file.
+Info : Found 0 N2 inbound cells.
+
+  According to qrc_tech_file, there are total 11 routing layers [ V(5) / H(6) ]
+
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX2'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHXL' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHXL' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHXL'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHXL' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHXL' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHXL'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHXL' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHXL' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHXL'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX4'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '40' reached for message 'LBR-155'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDHX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDHX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'X2' and 'PPN' in libcell 'BMXIX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'PPN' in libcell 'BMXIX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'PPN' in libcell 'BMXIX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'X2' and 'PPN' in libcell 'BMXIX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M1' and 'PPN' in libcell 'BMXIX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'M0' and 'PPN' in libcell 'BMXIX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'CLKMX2X12'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S0' and 'Y' in libcell 'CLKMX2X2'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '40' reached for message 'LBR-162'.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'max_clock_tree_path' between libpins 'clk_i' and 'clk_i' on libcell 'scm_128x32' is ignored. Hold timing analysis and optimization are not supported.
+        : Refer to 'Supported Liberty timing_type Values' in the 'Timing Analysis Guide' for more information.
+Info    : Detected an unsupported timing arc type. [LBR-72]
+        : Timing arc 'min_clock_tree_path' between libpins 'clk_i' and 'clk_i' on libcell 'scm_128x32' is ignored. Hold timing analysis and optimization are not supported.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'fast_vdd1v0_multibitsDFF.lib', Total cells: 505, Unusable cells: 19.
+	List of unusable cells: 'ANTENNA HOLDX1 TLATNSRX1 TLATNSRX2 TLATNSRX4 TLATNSRXL TLATSRX1 TLATSRX2 TLATSRX4 TLATSRXL DECAP10 DECAP2 DECAP3 DECAP4 DECAP5 DECAP6 DECAP7 DECAP8 DECAP9 .'
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'ram_128_1v1_0C.lib', Total cells: 1, Unusable cells: 1.
+	List of unusable cells: 'scm_128x32 .'
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'physical_cells', Total cells: 80, Unusable cells: 80.
+	List of unusable cells: 'FILL1 FILL16 FILL2 FILL32 FILL4 FILL64 FILL8 FSWNX1 FSWX1 HSWDNX1 HSWDX1 HSWNX1 HSWX1 ISOHLDX1_OFF ISOHLDX1_ON ISOHX1_OFF ISOHX1_ON ISOLX1_OFF ISOLX1_ON ISONLX1_OFF ISONLX1_ON LSHL_ISOH_X1_FROM_OFF LSHL_ISOH_X1_TO_ON LSHL_ISOL_X1_FROM_OFF LSHL_ISOL_X1_TO_ON LSHL_ISONH_X1_FROM_OFF LSHL_ISONH_X1_TO_ON LSHL_ISONL_X1_FROM_OFF LSHL_ISONL_X1_TO_ON LSHLX1_FROM LSHLX1_TO LSLH_ISOH_X1_FROM_OFF LSLH_ISOH_X1_TO_ON LSLH_ISOL_X1_FROM_OFF LSLH_ISOL_X1_TO_ON LSLH_ISONH_X1_FROM_OFF LSLH_ISONH_X1_TO_ON LSLH_ISONL_X1_FROM_OFF LSLH_ISONL_X1_TO_ON LSLHX1_FROM LSLHX1_TO PBUFX2 PINVX1 RDFFNQX1 RDFFNRQX1 RDFFNRX1 RDFFNSQX1 RDFFNSRQX1 RDFFNSRX1 RDFFNSX1 RDFFNX1 RDFFQX1 RDFFRQX1 RDFFRX1 RDFFSQX1 RDFFSRQX1 RDFFSRX1 RDFFSX1 RDFFX1 RTLATRX1 RTLATSRX1 RTLATX1 SRDFFNQX1 SRDFFNRQX1 SRDFFNRX1 SRDFFNSQX1 SRDFFNSRQX1 SRDFFNSRX1 SRDFFNSX1 SRDFFNX1 SRDFFQX1 SRDFFRQX1 SRDFFRX1 SRDFFSQX1 SRDFFSRQX1 SRDFFSRX1 SRDFFSX1 SRDFFX1 HSWBX1 HSWCX1 .'
+==================================
+Stage : incr_opt 
+==================================
+  =================
+   Message Summary
+  =================
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|   Id   |  Sev  |Count|                                                                          Message Text                                                                          |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|LBR-3   |Info   |    1|Appending library.                                                                                                                                              |
+|        |       |     |Appending libraries will overwrite some of the characteristics of the library.                                                                                  |
+|LBR-9   |Warning|   20|Library cell has no output pins defined.                                                                                                                        |
+|        |       |     |Add the missing output pin(s)                                                                                                                                   |
+|        |       |     | , then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined      |
+|        |       |     | function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, |
+|        |       |     | the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell;     |
+|        |       |     | result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend    |
+|        |       |     | upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.              |
+|LBR-40  |Info   |    3|An unsupported construct was detected in this library.                                                                                                          |
+|        |       |     |Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.                                               |
+|LBR-41  |Info   |   33|An output library pin lacks a function attribute.                                                                                                               |
+|        |       |     |If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model                                                 |
+|        |       |     | (because one of its outputs does not have a valid function.                                                                                                    |
+|LBR-72  |Info   |    2|Detected an unsupported timing arc type.                                                                                                                        |
+|        |       |     |Refer to 'Supported Liberty timing_type Values' in the 'Timing Analysis Guide' for more information.                                                            |
+|LBR-141 |Warning|   16|Clock function definition makes cell unusable.                                                                                                                  |
+|        |       |     |The sequential cell cannot be inferred because its clock function is unknown.                                                                                   |
+|LBR-155 |Info   |  264|Mismatch in unateness between 'timing_sense' attribute and the function.                                                                                        |
+|        |       |     |The 'timing_sense' attribute will be respected.                                                                                                                 |
+|LBR-161 |Info   |    1|Setting the maximum print count of this message to 10 if information_level is less than 9.                                                                      |
+|LBR-162 |Info   |  124|Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed.                                                                                         |
+|        |       |     |Setting the 'timing_sense' to non_unate.                                                                                                                        |
+|LBR-412 |Info   |    2|Created nominal operating condition.                                                                                                                            |
+|        |       |     |The nominal operating condition is represented, either by the nominal PVT values specified in the library source                                                |
+|        |       |     | (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).                                                    |
+|LBR-415 |Info   |    3|Unusable library cells found at the time of loading a library.                                                                                                  |
+|        |       |     |For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check             |
+|        |       |     | 'unusable_reason' libcell attribute.                                                                                                                           |
+|LBR-518 |Info   |   49|Missing a function attribute in the output pin definition.                                                                                                      |
+|PHYS-107|Warning|   16|Duplicate macro definition.                                                                                                                                     |
+|PHYS-128|Warning|    2|Library cell pin 'use' attribute is inconsistent between lib and LEF.                                                                                           |
+|        |       |     |Overriding lib value with LEF value. To use .lib as golden do: '::legacy::set_attribute use_power_ground_pin_from_lef false'.                                   |
+|PHYS-129|Info   |  119|Via with no resistance will have a value of '0.0' assigned for resistance value.                                                                                |
+|        |       |     |If this is the expected behavior, this message can be ignored.                                                                                                  |
+|PHYS-279|Warning|   80|Physical cell not defined in library.                                                                                                                           |
+|        |       |     |Ensure that the proper library files are available and have been imported.                                                                                      |
+|TUI-504 |Warning|    1|Could not open file.                                                                                                                                            |
+|        |       |     |Check permissions of the file and directory.                                                                                                                    |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This attribute has no effect on the tool operation.
+This attribute has no effect on the tool operation.
+%# End ::stylus_db::read (04/13 18:59:19, total cpu=09:00:02, real=09:00:01, peak res=500.00M, current mem=1582.71M)
+@genus:root: 3> gui_show
+        Computing net loads.
+        Tracing clock networks.
+Info    : Multimode clock gating check is disabled. [TIM-1000]
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+GTD-INFO: Parsing file top.mtarpt...
+@genus:root: 4> 
+@genus:root: 4> 
+@genus:root: 4> exit
+
+Lic Summary:
+[19:04:43.218336] Cdslmd servers: blendedP
+[19:04:43.218345] Feature usage summary:
+[19:04:43.218345] Genus_Synthesis
+
+Normal exit.

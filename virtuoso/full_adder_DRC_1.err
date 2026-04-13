@@ -1,0 +1,22 @@
+================================================================================
+Rule No. 406 : CONT.W.1: Maximum and minimum Contact width/length == 0.06 um
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : full_adder layout Lab1_SJ
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.070        1.405       0.100        1.435
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.070      1.405      0.100      1.435
+

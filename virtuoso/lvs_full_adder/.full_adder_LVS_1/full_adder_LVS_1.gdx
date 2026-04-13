@@ -1,0 +1,34 @@
+# 0
+g45p1svt(MOS): g45p1svt(MOS)
+# 0
+g45n1svt(MOS): g45n1svt(MOS)
+# 28
+ADDFX1 schematic lab1_sj_v2: ADDFX1 layout lab1_sj_v2
+S mn9 avD2_6
+S mn10 avD2_5
+S mn11 avD2_4
+D mn13 avD2_7
+S mn12 avD2_9
+S mn1 avD2_13
+S mn2 avD2_10
+S mn0 avD2_14
+D mn7 avD2_8
+D mn8 avD2_3
+D mn3 avD2_11
+S mn6 avD2_1
+D mn5 avD2_2
+D mn4 avD2_12
+S mp9 avD10_6
+S mp10 avD10_5
+S mp11 avD10_4
+D mp13 avD10_7
+S mp12 avD10_9
+S mp1 avD10_13
+S mp0 avD10_14
+S mp2 avD10_10
+D mp4 avD10_12
+D mp5 avD10_2
+S mp6 avD10_1
+D mp7 avD10_8
+D mp3 avD10_11
+D mp8 avD10_3

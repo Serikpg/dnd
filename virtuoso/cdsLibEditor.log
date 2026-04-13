@@ -1,0 +1,12 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 02/10/2023 14:07 (cpgsrv13) $
+\o Sub version:		sub-version  s312 
+\o Arguments:		-cdslib /home/alumnes/s/serik.perez/dnd/virtuoso/cds.lib -mpssession virtuoso4281 -mpshost c4d3 -mpsversion 6.18 
+\o Working Directory:	c4d3:/home/alumnes/s/serik.perez/dnd/virtuoso
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(50 77 500 400))
+\a exit(0)

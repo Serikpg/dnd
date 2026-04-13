@@ -1,0 +1,33 @@
+# 4
+g45n1lvt(MOS): g45n1lvt(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+g45p1lvt(MOS): g45p1lvt(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 19
+ADDFX1_lvt schematic lab1_sj_v2: ADDFX1_lvt layout lab1_sj_v2
+= n4 avC11
+= Sb avC12
+= COb avC8
+= n7 avC18
+= n6 avC19
+= n2 avC9
+= n0 avC17
+= n5 avC13
+= n9 avC15
+= n8 avC16
+= n3 avC10
+= n1 avC14
+= VDD VDD I
+= VSS VSS I
+= A A I
+= B B I
+= CI CI I
+= CO CO O
+= S S O

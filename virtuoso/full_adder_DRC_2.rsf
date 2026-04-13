@@ -1,0 +1,24 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.25 09/19/22 00:11 (sjfhw885) $
+; sub-version 4.1_USR6_EHF13
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "lab1_sj_v2" )
+  ?cellName "ADDFX1_lvt"
+  ?viewName "layout"
+  ?runName "full_adder_DRC_2"
+  ?technology "gpdk045_av"
+  ?techLib "/eda/trasllat/GPDK45/gpdk045_v_6_0/assura_tech.lib"
+  ?avrpt t
+  ?dbuPerUU 2000.0
+  ?flagNon45 t
+  ?flagOffGrid (0.005 1.0)
+  ?joinPins top
+)

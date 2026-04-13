@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      serik.perez
+HostName                       c4d3.upc.es
+ProcessIdentifier              5353
+ProcessCreationTime_UTC        1773680459
+ProcessCreationTime_Readable   Mon Mar 16 18:00:59 2026 CET
+AppIdentifier                  /eda/cadence/2022-23/RHELx86/IC_6.1.8.320/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/alumnes/s/serik.perez/dnd/virtuoso/libManager.log
+TimeEditLocked                 Mon Mar 16 18:01:33 2026 CET

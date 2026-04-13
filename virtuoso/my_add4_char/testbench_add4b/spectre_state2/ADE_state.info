@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("my_add4_char" "testbench_add4b" "config" "spectre")
+descriptionText = "None"

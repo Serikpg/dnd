@@ -1,0 +1,13 @@
+//Revision 2
+config testbench_add4b;
+design my_add4_char.testbench_add4b:schematic;
+liblist analogLib, gsclib045, my_add4_char;
+
+viewlist spectre, schematic, cmos_sch;
+stoplist spectre;
+
+
+cell gsclib045.ADDFX1 binding :schematic;
+
+
+endconfig

@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus UI Version 21.1.1-s329
+#--------------------------------------------------------------------------------------
+
+qrc  -log_file /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/qrc.full_adder_LVS_1.log -cmd /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/qrc.full_adder_LVS_1.ccl 

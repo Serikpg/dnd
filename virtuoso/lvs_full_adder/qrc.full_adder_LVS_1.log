@@ -1,0 +1,695 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+21.1.1-s329 Fri Aug 27 18:14:20 PDT 2021
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2021 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXOPT-243) : For Assura inputs, if the "output_setup -directory_name" option was not
+specified, it is automatically set to the input directory.
+INFO (LBRCXU-108): Starting
+
+ /eda/cadence/2022-23/RHELx86/ASSURA_04.16.113_618/tools.lnx86/assura/bin/avRCXxref /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/__qrc.rcx_cmd -useRunName
+@(#)$CDS: avRCXxref_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.25 09/19/2022 00:35 (sjfhw885) $
+sub-version 4.1_USR6_EHF13, integ signature 2022-09-19-0008
+run on CadenceRocky8 at Fri Feb 27 11:46:35 2026
+Reading rsf
+INFO (LBRCXU-114): Finished /eda/cadence/2022-23/RHELx86/ASSURA_04.16.113_618/tools.lnx86/assura/bin/avRCXxref
+
+INFO (LBRCXM-630): Starting extraction: Fri Feb 27 11:46:35 2026
+
+
+Forking:  capgen -techdir /eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/typical -inc /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1.elf -lvs /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1.xcn -p2lvs /eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/typical/qrcTechFile -reseqn -sw3d -p poly_conn,allGate,Oxide -canonical_res_caps -length_units meters -exclude_gate_res -cap_ground_layer psubstrate /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus Extraction Techgen -trans VERSION 21.1.1 Linux 64 bit - (Fri Aug 27 17:50:08 PDT 2021)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1
+
+INFO (CAPGEN-41737): Lvs connect layers Bondpad CapMetal ind10 ind11 ind_ct npn_emit pnp_emit are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by ind10 layers SPK_T?479 are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by ind11 layers SPRL_T?478 are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by nb_tap layers Nburied are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by ndiff_conn layers ntap are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by nwell_conn layers nb_tap are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by pdiff_conn layers ptap are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by ptap layers pwell are not mapped in layer_setup file
+
+rcxspice took  0.89 user, 0.15 sys, 1.00 elapsed, 82392.0 kbytes
+
+Successfully created RCX script '/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/rcx.sh'
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 21.10
+
+INFO (LBRCXM-608): Executing command
+   /bin/ksh  /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/rcx.sh
+
+##=======================================================
+##ADD_EXPLICIT_VIAS=N
+##ADD_BULK_TERMINAL=N
+##AGDS_FILE=/dev/null
+##AGDS_LAYER_MAP_FILE=/dev/null
+##HCCI_DEV_PROP_FILE=/dev/null
+##AGDS_SPICE_FILE=/dev/null
+##AGDS_TEXT_LAYERS=
+##ARRAY_VIAS_SPACING=
+##ASSURA_RUN_DIR=/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder
+##ASSURA_RUN_NAME=full_adder_LVS_1
+##BLACK_BOX_CELLS=/dev/null
+##BREAK_WIDTH=
+##CAP_COUPLING_FACTOR=1.0
+##CAP_EXTRACT_MODE=coupled
+##CAP_GROUND=VSS
+##CAP_MODELS=no
+##DANGLINGR=N
+##DENSITY_CHECK_METHOD=P
+##DELETE_OUTPUT_FILE=N
+##DEVICE_FINGER_DELIMITER='@'
+##DF2=N
+##DRACULA_RUN_DIR=
+##DRACULA_RUN_NAME=
+##ENABLESENSITIVITYEXTRACTION=N
+##EXCLUDE_FLOAT_LIMIT=
+##EXCLUDE_FLOAT_DECOPULING_FACTOR=
+##EXCLUDE_FLOATING_NETS=N
+##EXCLUDE_NETS_REDUCERC=/dev/null
+##EXCLUDE_SELF_CAPS=N
+##IGNORE_GATE_DIFFUSION_FRINGING_CAP=Y
+##EXTRACT=cap
+##EXTRACT_MOS_DIFFUSION_AP=N
+##EXTRACT_MOS_DIFFUSION_HIGH=
+##EXTRACT_MOS_DIFFUSION_RES=N
+##FILTER_SIZE=2.0
+##FIXED_NETS_FILE=/dev/null
+##FMAX=
+##FRACTURE_LENGTH_UNITS=microns
+##FREQUENCY_FILE=/dev/null
+##GROUND_NETS=
+##GROUND_NETS_FILE=/dev/null
+##GROUND_SUBSTRATE_FLOATING_NETS=N
+##HCCI_DEV_PROP=7
+##HCCI_INST_PROP=6
+##HCCI_NET_PROP=5
+##HCCI_RULE_FILE=
+##HCCI_RUN_DIR=
+##HCCI_RUN_NAME=
+##HEADER_FILE=/dev/null
+##HIERARCHY_DELIMITER='/'
+##OUTPUT_HIERARCHY_DELIMITER='/'
+##HRCX_CELLS_FILE=/dev/null
+##IMPORT_GLOBALS=Y
+##LADDER_NETWORK=N
+##LVS_SOURCE=assura
+##M_FACTORR=infinite
+##M_FACTORW=N
+##MACRO_CELL=Y
+##MAX_FRACTURE_LENGTH=infinite
+##MAX_SIGNALS=
+##MERGE_PARALLEL_R=N
+##MERGE_PARALLEL_VIA=N
+##MINC=1e-17
+##MINC_BY_PERCENTAGE=0.1
+##MINR=0.001
+##NET_NAME_SPACE=layout
+##NETS_FILE=/dev/null
+##OUTPUT=/home/alumnes/s/serik.perez/dnd/virtuoso/full_adder_LVS_1.sp
+##OUTPUT_NET_NAME_SPACE=schematic
+##PARASITIC_BLOCKING_DEVICE_CELLS_TYPE=gray
+##PARASITIC_CAP_MODELS=no
+##PARASITIC_RES_MODELS=no
+##PARASITIC_RES_LENGTH=N
+##PARASITIC_RES_WIDTH=N
+##PARASITIC_RES_WIDTH_DRAWN=N
+##PARASITIC_RES_UNIT=N
+##PARTIAL_CAP_BLOCKING=N
+##PEEC=N
+##PIN_ORDER_FILE=/dev/null
+##PIPE_ADVGEN=
+##PIPE_SPICE2DB=
+##POWER_NETS=
+##POWER_NETS_FILE=/dev/null
+##RC_FREQUENCY=
+##RCXDIR=/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1
+##RCXFS_HIGH=N
+##RCXFS_NETS_FILE=
+##RCXFS_TYPE=none
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_VIA_OFF=N
+##REDUCERC=N
+##REGION_LIMIT=
+##RES_MODELS=no
+##RISE_TIME=
+##SAVE_FILL_SHAPES=N
+##SINGLE_CAP_EDSPF=N
+##SHOW_DIODES=N
+##SKIN_FREQUENCY=
+##SPEF=N
+##SPEF_UNITS=
+##SPLIT_PINS=N
+##FORCE_SUBCELL_PIN_ORDERS=N
+##SPLIT_PINS_DISTANCE=
+##SUB_NODE_CHAR='#'
+##SUBSTRATE_PROFILE=/dev/null
+##SUBSTRATE_STAMPING_OFF=N
+##TEMPDIR=/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/rcx_temp
+##TYPE=full
+##USER_REGION=/dev/null
+##VARIANT_CELL_FILE=/dev/null
+##VIA_EFFECT_OFF=N
+##VIRTUAL_FILL=
+##XREF=/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/full_adder_LVS_1.gnx,/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/full_adder_LVS_1.gdx
+##XY_COORDINATES=
+##=======================================================
+
+CASE_SENSITIVE=TRUE
+export CASE_SENSITIVE
+QRC_MOS_LW_PRECISION=y
+export QRC_MOS_LW_PRECISION
+TEMPDIR=`setTempDir /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/rcx_temp`
+setTempDir /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/rcx_temp
+export TEMPDIR
+DEVICE_FINGER_DELIMITER='@'
+HIERARCHY_DELIMITER='/'
+OUTPUT_HIERARCHY_DELIMITER='/'
+cd /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1
+cat <<ENDCAT> caps2dversion
+* caps2d version: 10
+ENDCAT
+cat <<ENDCAT> flattransUnit.info
+meters
+ENDCAT
+QRC=Y
+export QRC
+cat <<ENDCAT> topcellxcn.info
+/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1.xcn
+ENDCAT
+
+#==========================================================#
+# Generate RCX input data from Assura LVS database
+#==========================================================#
+
+GOALIE2DIR=/eda/cadence/2022-23/RHELx86/QUANTUS_21.11.000/tools.lnx86/extraction/bin
+export GOALIE2DIR
+vdbToRcx /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder \
+	full_adder_LVS_1 -unit meters -mFactorR -- -V1 -H satfile -r \
+	/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1.xcn \
+	-xgl
+@(#)$CDS: vdbToRcx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.25 09/19/2022 00:42 (sjfhw885) $
+20.1.2 Linux 64 bit - (Tue Mar 22 09:20:33 PDT 2022)
+Opening LVS data for full_adder_LVS_1 in /home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder
+Open time is 0.0 sec.
+Build pins/attributes took 0.1 sec.
+Processing metal1_conn_pintext                   7 shapes 0.0 sec.
+create satfile took  0.03 user, 0.02 sys, 0.00 elapsed, 139896.0 kbytes
+write edge metal1_conn_pintext took  0.00 user, 0.00 sys, 0.00 elapsed, 139896.0 kbytes
+Building net map file.		0.0 sec.
+create netmap file took 0.00 user, 0.00 sys, 0.00 elapsed, 139896.0 kbytes
+create net file took 0.00 user, 0.00 sys, 0.00 elapsed, 139896.0 kbytes
+WARNING (LBCLV-5663): No bipolar models provided. Can't create bipolar files
+
+WARNING (LBCLV-5660): No resistor models provided. Can't create resistor files
+
+WARNING (LBCLV-5654): No capacitor models provided. Can't create capacitor file
+
+WARNING (LBCLV-5657): No diode models provided. Can't create diode files
+
+WARNING (LBCLV-5706): no generic models in rule file
+
+Device creation took 0.0 sec
+Processing cont_ndiff                           30 shapes 0.0 sec.
+write edge cont_ndiff took  0.00 user, 0.00 sys, 0.00 elapsed, 140540.0 kbytes
+Processing cont_pdiff                           33 shapes 0.0 sec.
+write edge cont_pdiff took  0.00 user, 0.00 sys, 0.00 elapsed, 140820.0 kbytes
+Processing cont_poly                            14 shapes 0.0 sec.
+write edge cont_poly took  0.00 user, 0.00 sys, 0.00 elapsed, 140820.0 kbytes
+write edge _pmos1v_lvt_MOS_12 took  0.00 user, 0.00 sys, 0.00 elapsed, 141084.0 kbytes
+write edge _nmos1v_lvt_MOS_4 took  0.00 user, 0.00 sys, 0.00 elapsed, 141084.0 kbytes
+Processing _pmos1v_lvt_MOS_12                   14 shapes 0.0 sec.
+Processing _nmos1v_lvt_MOS_4                    14 shapes 0.0 sec.
+Processing pwell                                 1 shapes 0.0 sec.
+write edge pwell took  0.00 user, 0.00 sys, 0.00 elapsed, 141352.0 kbytes
+Processing ptap                                  1 shapes 0.0 sec.
+write edge ptap took  0.00 user, 0.00 sys, 0.00 elapsed, 141352.0 kbytes
+Processing ntap                                  1 shapes 0.0 sec.
+write edge ntap took  0.00 user, 0.00 sys, 0.00 elapsed, 141616.0 kbytes
+Processing ndiff_conn                           17 shapes 0.0 sec.
+write edge ndiff_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 141880.0 kbytes
+Processing poly_conn                            14 shapes 0.0 sec.
+write edge poly_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 141880.0 kbytes
+Processing pdiff_conn                           17 shapes 0.0 sec.
+write edge pdiff_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 142144.0 kbytes
+Processing nwell_conn                            1 shapes 0.0 sec.
+write edge nwell_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 142144.0 kbytes
+Processing metal1_conn                          13 shapes 0.0 sec.
+write edge metal1_conn took  0.00 user, 0.00 sys, 0.00 elapsed, 142408.0 kbytes
+sort edges took  0.03 user, 0.25 sys, 0.00 elapsed, 4496.0 kbytes
+sort edges and labels took  0.23 user, 1.16 sys, 2.00 elapsed, 142408.0 kbytes
+
+	vdbToRcx System Usage:
+	Elapsed:     2 seconds.
+	CPU:         0.1 seconds
+	Memory      31 Meg
+GOALIE2DIR=/eda/cadence/2022-23/RHELx86/QUANTUS_21.11.000/tools.lnx86/extraction/bin/64bit/
+export GOALIE2DIR
+
+#==========================================================#
+# Calculate erosion tables for specified process layers
+#==========================================================#
+
+densitymap -V -TC -O metal1_conn.den metal1_conn_tile_spec metal1_conn
+densitymap took 0.00 user, 0.02 sys, 0.00 elapsed, 4996.0 kbytes
+geom _nmos1v_lvt_MOS_4 ndiff_conn - _nmos1v_lvt_MOS_4,10,i,1
+geom _pmos1v_lvt_MOS_12 pdiff_conn - _pmos1v_lvt_MOS_12,10,i,1
+
+#==========================================================#
+# Generate power list
+#==========================================================#
+
+cat global.net > power_list
+
+#==========================================================#
+# Create RCXFS via layers for capacitance-only extraction
+#==========================================================#
+
+geom -V cont_poly poly_conn metal1_conn - cont_poly,111,i,1
+geom took  0.00 user, 0.01 sys, 0.00 elapsed, 6220.0 kbytes
+geom -V cont_pdiff metal1_conn pdiff_conn - cont_pdiff_metal1_conn_pdiff_conn,111,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6320.0 kbytes
+geom -V cont_ndiff metal1_conn ndiff_conn - cont_ndiff_metal1_conn_ndiff_conn,111,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6456.0 kbytes
+#==========================================================#
+# Flatten net file, routing, via and device layers
+#==========================================================#
+
+SAVEDIR=`beginFlattenInputs`
+beginFlattenInputs
+export SAVEDIR
+/bin/mv -f NET h_NET
+flatnet -V -li -h '/' h_NET NET
+flatnet took 0.00 user, 0.03 sys, 0.00 elapsed, 15188.0 kbytes
+netprint -V -N1 power_list:power_list_nums NET
+flattenTransistorData _nmos1v_lvt_MOS_4 meters
+flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 7920.0 kbytes
+flatnet took 0.00 user, 0.02 sys, 0.00 elapsed, 15280.0 kbytes
+flattrans took 0.00 user, 0.03 sys, 0.00 elapsed, 5276.0 kbytes
+flattenTransistorData _pmos1v_lvt_MOS_12 meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 8208.0 kbytes
+flatnet took 0.00 user, 0.02 sys, 0.00 elapsed, 15060.0 kbytes
+flattrans took 0.00 user, 0.03 sys, 0.00 elapsed, 5424.0 kbytes
+flattenLayers -m metal1_conn poly_conn ndiff_conn pdiff_conn nwell_conn \
+	cont_poly cont_pdiff_metal1_conn_pdiff_conn \
+	cont_ndiff_metal1_conn_ndiff_conn
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 8256.0 kbytes
+endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+CAP_GROUND=`findCapGround -g VSS NET`
+findCapGround -g VSS NET
+echo "CAP_GROUND=" ${CAP_GROUND}
+CAP_GROUND= 2
+export CAP_GROUND
+reconnect -cgnd ${CAP_GROUND} -float floatlvsnetsfile -tf \
+	_nmos1v_lvt_MOS_4,_pmos1v_lvt_MOS_12 -probe \
+	metal1_conn_pintext:metal1_conn:metal1_conn_pintext_fvia
+iprint -count floatlvsnetsfile > floatlvsnetsfile.txt
+geom _nmos1v_lvt_MOS_4,_pmos1v_lvt_MOS_12 - qrcgate,1,i,1
+netprint -max NET > original_maxnetfile
+
+#==========================================================#
+# Form capacitance layers for resistive process layers
+#==========================================================#
+
+
+#==========================================================#
+# Form capacitance layers for non-resistive process layers
+#==========================================================#
+
+grow -V .001 ndiff_conn mask
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5292.0 kbytes
+geom -V pdiff_conn mask - pdiff_conn,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5952.0 kbytes
+geom -V ndiff_conn,pdiff_conn - Oxide,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6016.0 kbytes
+createEmptyLayer metal11_conn
+createEmptyLayer metal10_conn
+createEmptyLayer metal9_conn
+createEmptyLayer metal8_conn
+createEmptyLayer metal7_conn
+createEmptyLayer metal6_conn
+createEmptyLayer metal5_conn
+createEmptyLayer metal4_conn
+createEmptyLayer metal3_conn
+createEmptyLayer metal2_conn
+
+#==========================================================#
+# Form substrate
+#==========================================================#
+
+geom -V nwell_conn - FOX,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5884.0 kbytes
+xytoebbox -V -g 10.002 -e metal11_conn,metal10_conn,metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,nwell_conn xg_FOX
+grow -V 0.001 FOX g_FOX
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5596.0 kbytes
+geom -V xg_FOX g_FOX - tmp_FOX,10
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5988.0 kbytes
+epick -V -reo -D ${CAP_GROUND} tmp_FOX pick_FOX
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5072.0 kbytes
+grow -V -m 0.002 pick_FOX g_pick_FOX
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5632.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6000.0 kbytes
+stamp -i FOX g_pick_FOX
+grow -V -m -0.002 g_pick_FOX pick_FOX
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5672.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 5864.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5924.0 kbytes
+emerge -V pick_FOX FOX tmp1_FOX
+emerge took 0.00 user, 0.01 sys, 0.00 elapsed, 5096.0 kbytes
+geom -V tmp1_FOX - FOX,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5880.0 kbytes
+/bin/rm -f g_pick_FOX xg_FOX tmp_FOX tmp1_FOX
+geom -V FOX Oxide - FOX,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5900.0 kbytes
+geom _nmos1v_lvt_MOS_4,_pmos1v_lvt_MOS_12 - qrcgate,1,i,1
+
+#==========================================================#
+# Create sip/sw3d/cn3d capacitance data files
+#==========================================================#
+
+cat <<ENDCAT> sip.cmd
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly_conn,metal1_conn -er \
+	metal2_conn.den -n 1.4 -i 0,1.401 -b metal1_conn,poly_conn,Oxide,FOX \
+	-t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.08 -Maxw 1.8 -p metal2_conn,key 0,1.4 - metal2_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal1_conn,metal2_conn -er \
+	metal3_conn.den -n 1.75 -i 0,1.751 -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.08 -Maxw 1.8 -p metal3_conn,key 0,1.75 - metal3_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal2_conn,metal3_conn -er \
+	metal4_conn.den -n 1.75 -i 0,1.751 -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.08 -Maxw 1.8 -p metal4_conn,key 0,1.75 - metal4_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal3_conn,metal4_conn -er \
+	metal5_conn.den -n 1.75 -i 0,1.751 -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.08 -Maxw 1.8 -p metal5_conn,key 0,1.75 - metal5_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal4_conn,metal5_conn -er \
+	metal6_conn.den -n 1.75 -i 0,1.751 -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn -j \
+	0.08 -Maxw 1.8 -p metal6_conn,key 0,1.75 - metal6_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal5_conn,metal6_conn -er \
+	metal7_conn.den -n 1.75 -i 0,1.751 -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -j 0.08 -Maxw \
+	1.8 -p metal7_conn,key 0,1.75 - metal7_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal6_conn,metal7_conn -er \
+	metal8_conn.den -n 1.75 -i 0,1.751 -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -j 0.08 -Maxw 1.8 -p \
+	metal8_conn,key 0,1.75 - metal8_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal7_conn,metal8_conn -er \
+	metal9_conn.den -n 1.75 -i 0,1.751 -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -j 0.08 -Maxw 1.8 -p metal9_conn,key \
+	0,1.75 - metal9_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal8_conn,metal9_conn -er \
+	metal10_conn.den -n 5 -i 0,5.001 -b \
+	metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -j 0.22 -Maxw 4.95 -p metal10_conn,key 0,5 - \
+	metal10_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc metal9_conn,metal10_conn -n 5 -i \
+	0,5.001 -b \
+	metal10_conn,metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-j 0.22 -Maxw 4.95 -p metal11_conn,key 0,5 - metal11_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly_conn,allGate,Oxide -n 0.6 -i \
+	0,0.601 -b Oxide,FOX -t \
+	metal1_conn,metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.045 -Maxw 1.0125 -p poly_conn,key 0,0.6 - poly_conn.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly_conn -er metal1_conn.den -n \
+	1.2 -i 0,1.201 -b poly_conn,Oxide,FOX -t \
+	metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-j 0.06 -Maxw 1.35 -p metal1_conn,key 0,1.2 - metal1_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b \
+	metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-Maxw 4.95 -p metal10_conn,key,metal11_conn,key 0,5,0 - \
+	metal10_conn_metal11_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal11_conn -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-Maxw 4.95 -p metal9_conn,key,metal11_conn,key 0,5,0 - \
+	metal9_conn_metal11_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -Maxw 4.95 -p metal9_conn,key,metal10_conn,key 0,5,0 \
+	- metal9_conn_metal10_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal10_conn -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -Maxw 4.95 -p metal8_conn,key,metal10_conn,key 0,5,0 \
+	- metal8_conn_metal10_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -Maxw 1.8 -p \
+	metal8_conn,key,metal9_conn,key 0,1.75,0 - \
+	metal8_conn_metal9_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal9_conn -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -Maxw 1.8 -p \
+	metal7_conn,key,metal9_conn,key 0,1.75,0 - \
+	metal7_conn_metal9_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -Maxw 1.8 -p \
+	metal7_conn,key,metal8_conn,key 0,1.75,0 - \
+	metal7_conn_metal8_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal8_conn -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -Maxw 1.8 -p \
+	metal6_conn,key,metal8_conn,key 0,1.75,0 - \
+	metal6_conn_metal8_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -Maxw 1.8 -p \
+	metal6_conn,key,metal7_conn,key 0,1.75,0 - \
+	metal6_conn_metal7_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal7_conn -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -Maxw 1.8 -p \
+	metal5_conn,key,metal7_conn,key 0,1.75,0 - \
+	metal5_conn_metal7_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal5_conn,key,metal6_conn,key 0,1.75,0 - \
+	metal5_conn_metal6_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal6_conn -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn -Maxw \
+	1.8 -p metal4_conn,key,metal6_conn,key 0,1.75,0 - \
+	metal4_conn_metal6_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal4_conn,key,metal5_conn,key 0,1.75,0 - \
+	metal4_conn_metal5_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal5_conn -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal3_conn,key,metal5_conn,key 0,1.75,0 - \
+	metal3_conn_metal5_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal3_conn,key,metal4_conn,key 0,1.75,0 - \
+	metal3_conn_metal4_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal4_conn -b \
+	metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal2_conn,key,metal4_conn,key 0,1.75,0 - \
+	metal2_conn_metal4_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b metal1_conn,poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal2_conn,key,metal3_conn,key 0,1.75,0 - \
+	metal2_conn_metal3_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal3_conn -b \
+	poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal1_conn,key,metal3_conn,key 0,1.75,0 - \
+	metal1_conn_metal3_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly_conn,Oxide,FOX -t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.8 -p metal1_conn,key,metal2_conn,key 0,1.4,0 - \
+	metal1_conn_metal2_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R metal2_conn -b Oxide,FOX -t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-k metal1_conn:0.15 -Maxw 1.8 -p poly_conn,key,metal2_conn,key \
+	0,1.4,0 - poly_conn_metal2_conn.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R metal1_conn,poly_conn -b Oxide,FOX \
+	-t \
+	metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-Maxw 1.35 -p poly_conn,key,metal1_conn,key 0,1.2,0 - \
+	poly_conn_metal1_conn.sip
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal9_conn,metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-p metal10_conn,metal11_conn - metal10_conn_metal11_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal8_conn,metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal11_conn -p metal9_conn,metal10_conn - \
+	metal9_conn_metal10_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal7_conn,metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal10_conn,metal11_conn -p metal8_conn,metal9_conn - \
+	metal8_conn_metal9_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal6_conn,metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal9_conn,metal10_conn,metal11_conn -p metal7_conn,metal8_conn - \
+	metal7_conn_metal8_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal5_conn,metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal8_conn,metal9_conn,metal10_conn,metal11_conn -p \
+	metal6_conn,metal7_conn - metal6_conn_metal7_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal4_conn,metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX \
+	-t metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn -p \
+	metal5_conn,metal6_conn - metal5_conn_metal6_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal3_conn,metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-p metal4_conn,metal5_conn - metal4_conn_metal5_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b \
+	metal2_conn,metal1_conn,poly_conn,Oxide,FOX -t \
+	metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-p metal3_conn,metal4_conn - metal3_conn_metal4_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b metal1_conn,poly_conn,Oxide,FOX -t \
+	metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-p metal2_conn,metal3_conn - metal2_conn_metal3_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b poly_conn,Oxide,FOX -t \
+	metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-p metal1_conn,metal2_conn - metal1_conn_metal2_conn.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b Oxide,FOX -t \
+	metal2_conn,metal3_conn,metal4_conn,metal5_conn,metal6_conn,metal7_conn,metal8_conn,metal9_conn,metal10_conn,metal11_conn \
+	-p poly_conn,metal1_conn - poly_conn_metal1_conn.sw3d
+ENDCAT
+
+#==========================================================#
+# Prepare gate capacitance blocking layers
+#==========================================================#
+
+emerge -V _nmos1v_lvt_MOS_4 _pmos1v_lvt_MOS_12 allGate
+
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 3336.0 kbytes
+#==========================================================#
+# Run pax16 to generate capfile
+#==========================================================#
+
+pax16 -V -lee_off -gnd ${CAP_GROUND} -ignore_cf_table -scf sip.cmd \
+	-M_perim_off -c \
+	/eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/typical/qrcTechFile -f FOX \
+	Oxide poly_conn metal1_conn metal2_conn metal3_conn metal4_conn \
+	metal5_conn metal6_conn metal7_conn metal8_conn metal9_conn \
+	metal10_conn metal11_conn allGate - \
+	/eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/typical/qrcTechFile - - NET - \
+	capfile
+
+pax16 took  0.55 user, 0.35 sys, 2.00 elapsed, 115556.0 kbytes
+#==========================================================#
+# Generate netlister data files
+#==========================================================#
+
+
+#==========================================================#
+# Process text layers
+#==========================================================#
+
+flatlabel -V  -tc -F -l flatlabel.info metal1_conn_pintext L1T0
+
+INFO (FLTLBL-89003): exec labsort -V L1T0
+
+#==========================================================#
+# Perform RC reduction
+#==========================================================#
+
+xreduce -V -mergecap -n NET -tech \
+	/eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/typical -d1 -mfactorR infinite \
+	-g ${CAP_GROUND},1.0 -danglingR -minR 0.001 -minC 1e-17 -minCper 0.1 \
+	-cap capfile _nmos1v_lvt_MOS_4.trans _pmos1v_lvt_MOS_12.trans L1T0
+
+INFO (XREDUCE-199097): mFactorR set to infinite
+
+INFO (XREDUCE-199128): mfactorR option to keep resistors is disabled
+
+INFO (XREDUCE-199109): minR option removed 0 resistors (0%)
+
+INFO (XREDUCE-199114): mfactorR option merged 0 groups of parallel transistors
+
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 69
+
+INFO (XREDUCE-199065): minC small capacitor decoupling set to 0.1%
+
+INFO (XREDUCE-199066): minC option decoupled 34 capacitors in capfile
+
+INFO (XREDUCE-199067): the number of capacitors decreased by 26 (38%)
+
+INFO (XREDUCE-199108): d1 option renamed 0 nets
+
+xreduce took 0.19 user, 0.09 sys, 0.00 elapsed, 27232.0 kbytes
+#==========================================================#
+# Generate HSPICE file
+#==========================================================#
+
+advgen -V -g0 -li -f -n -o HSPICE -nxref \
+	/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/full_adder_LVS_1.gnx \
+	-dxref \
+	/home/alumnes/s/serik.perez/dnd/virtuoso/lvs_full_adder/full_adder_LVS_1/full_adder_LVS_1.gdx \
+	-sc caps2dversion -m capfile -ta lvsmos.mod,_nmos1v_lvt_MOS_4.net \
+	_nmos1v_lvt_MOS_4.trans -ta lvsmos.mod,_pmos1v_lvt_MOS_12.net \
+	_pmos1v_lvt_MOS_12.trans - NET - \
+	/home/alumnes/s/serik.perez/dnd/virtuoso/full_adder_LVS_1.sp
+advgen took:  0.24 user, 0.01 sys, 0.00 elapsed, 30968.0 kbytes
+INFO (LBRCXM-610): Extraction finished.
+
+INFO (LBRCXM-582): Checking in license of QTS300 21.10
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    CadenceRocky8
+ Peak memory used:             84 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-982): Floating net statistics in the design:
+
+   Total floating nets =  0
+     Total signal nets =  19
+         Total LVS net = 19
+
+INFO (LBRCXM-702): Run ended: Fri Feb 27 11:46:45 2026
+
+
+INFO (LBRCXM-805): Quantus run took:  3s user, 4s sys, 12s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

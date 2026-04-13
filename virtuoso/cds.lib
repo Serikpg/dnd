@@ -1,0 +1,9 @@
+# File Created by Perez Gomez , Serik ( 24415348 , 1277078 ) at Mon Mar  2 18:03:44 2026
+# assisted by CdsLibEditor
+INCLUDE /eda/trasllat/GPDK45/gpdk045_v_6_0/cds.lib
+INCLUDE /eda/trasllat/GPDK45/gsclib045_all_v4.7/cds.lib
+INCLUDE /eda/trasllat/GPDK45/reference_libs/GPDK045/giolib045_v3.2/giolib045/cds.lib
+DEFINE Lab1_SJ /home/alumnes/s/serik.perez/dnd/virtuoso/Lab1_SJ
+DEFINE avTech /eda/cadence/2022-23/RHELx86/ASSURA_04.16.113_618/tools.lnx86/assura/etc/avtech/avTech
+DEFINE lab1_sj_v2 /home/alumnes/s/serik.perez/dnd/virtuoso/lab1_sj_v2
+DEFINE my_add4_char my_add4_char

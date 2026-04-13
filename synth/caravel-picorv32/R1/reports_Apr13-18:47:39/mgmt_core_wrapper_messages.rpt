@@ -1,0 +1,15 @@
+  =================
+   Message Summary
+  =================
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|    Id    |  Sev  |Count|                                                                         Message Text                                                                         |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|CHKTIM-19 |Warning|    1|Violating paths are less than num_paths/max_paths.                                                                                                            |
+|          |       |     |The timing query has number of violating paths less than requested num_paths/max_paths.                                                                       |
+|MESG-11   |Warning|   20|Maximum message print count reached.                                                                                                                          |
+|RPT-16    |Info   |    1|Joules engine is used.                                                                                                                                        |
+|RPT_DP-100|Warning|    1|The filename, column and line number information will not be available in the report.                                                                         |
+|          |       |     |You must set the 'hdl_track_filename_row_col' attribute to 'true' (before elaborate)                                                                          |
+|          |       |     | to enable filename, column, and line number tracking in the datapath report.                                                                                 |
+|SYNTH-8   |Info   |    1|Done incrementally optimizing.                                                                                                                                |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      juli.serra
+HostName                       c4d3.upc.es
+ProcessIdentifier              5552
+ProcessCreationTime_UTC        1771262967
+ProcessCreationTime_Readable   Mon Feb 16 18:29:27 2026 CET
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/alumnes/j/juli.serra/DNDLabs/virtuoso/Lab1_SJ/full_adder/layout/layout.oa.cdslck
+TimeEditLocked                 Mon Feb 16 18:44:58 2026 CET
