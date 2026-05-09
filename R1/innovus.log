@@ -1,0 +1,1208 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.33-s094_1, built Fri Aug 25 16:48:21 PDT 2023
+Options:	-stylus 
+Date:		Mon May  4 19:01:12 2026
+Host:		c4d3 (x86_64 w/Linux 4.18.0-553.56.1.el8_10.x86_64) (16cores*24cpus*13th Gen Intel(R) Core(TM) i7-13700 30720KB)
+OS:		Rocky Linux 8.10 (Green Obsidian)
+
+License:
+		[19:01:12.046450] Configured Lic search path (21.01-s002): 1717@seesemi.upc.edu:5280@blendedP.upc.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_12877_c4d3_juli.serra_cOP1Pn.
+
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading Pegasus 23.11 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> read_db out_May04-18:57:45/mgmt_core_wrapper_m
+
+(stylus_db): ::init_mmmc_version set to version 2 from SQL db.
+#% Begin Load Common DB (date=05/04 19:01:39, mem=1462.1M)
+(stylus_db): Begin loading Common DB 'mgmt_core_wrapper_m' (Created by Genus(TM) Synthesis Solution 22.13-s093_1) ...
+(stylus_db): Initialized SQLite db version 0.2 ..
+(stylus_db): Load Flow-Kit settings ...
+% Begin Load Flow-Kit settings (date=05/04 19:01:39, mem=1463.6M)
+% End Load Flow-Kit settings (date=05/04 19:01:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=1463.6M, current mem=1463.6M)
+% Begin Load MMMC data (date=05/04 19:01:39, mem=1463.6M)
+(stylus_db): Reading MMMC file ...
+Reading default_emulate_libset_max timing library '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+Read 489 cells in library 'fast_vdd1v0' 
+Reading default_emulate_libset_max timing library '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib' ...
+**WARN: (TECHLIB-459):	Appending library 'fast_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+Read 16 cells in library 'fast_vdd1v0' 
+Reading default_emulate_libset_max timing library '/home/alumnes/j/juli.serra/DNDLabs/prova/synth/caravel-picorv32/macros/ram_128_1v1_0C.lib' ...
+Read 1 cells in library 'scm_128x32' 
+% End Load MMMC data (date=05/04 19:01:39, total cpu=0:00:00.5, real=0:00:00.0, peak res=1527.9M, current mem=1475.8M)
+% Begin Load LEF files (date=05/04 19:01:39, mem=1475.8M)
+(stylus_db): Load LEF files ...
+
+Loading LEF file /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_tech.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_macro.lef ...
+
+Loading LEF file /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+**WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+
+Loading LEF file /home/alumnes/j/juli.serra/DNDLabs/prova/synth/caravel-picorv32/macros/ram_128.lef ...
+**WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'clk_i' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'req_i' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'we_i' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[31]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[30]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[29]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[28]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[27]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[26]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[25]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[24]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[23]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[22]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[21]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[20]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[19]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[18]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[17]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[16]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[15]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'data_o[31]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[30]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[29]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[28]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[27]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[26]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[25]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[24]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[23]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[22]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[21]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[20]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[19]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[18]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[17]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[16]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[15]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[14]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[13]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[12]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+% End Load LEF files (date=05/04 19:01:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=1485.4M, current mem=1485.4M)
+(stylus_db): Load Verilog Netlist ...
+% Begin Load netlist data ... (date=05/04 19:01:39, mem=1485.4M)
+*** Begin netlist parsing (mem=1629.6M) ***
+Pin 'VDD' of cell 'SDFF4RX2' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+Pin 'VSS' of cell 'SDFF4RX2' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+Pin 'VDD' of cell 'SDFF4RX1' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+Pin 'VSS' of cell 'SDFF4RX1' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'scm_128x32' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'scm_128x32' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+Created 506 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.v.gz'
+
+*** Memory Usage v#1 (Current mem = 1638.648M, initial mem = 642.211M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1638.6M) ***
+% End Load netlist data ... (date=05/04 19:01:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=1501.2M, current mem=1501.2M)
+Top level cell is mgmt_core_wrapper.
+Hooked 506 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mgmt_core_wrapper ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 587 modules.
+** info: there are 12062 stdCell insts.
+** info: there are 3 macros.
+
+*** Memory Usage v#1 (Current mem = 1696.562M, initial mem = 642.211M) ***
+(stylus_db): Init Design
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+*Info: initialize multi-corner CTS.
+**WARN: (IMPMSMV-1809):	Internal pg_pin VDD at 1.1v of cell scm_128x32 does not have external pg_pin with matching voltage in library /home/alumnes/j/juli.serra/DNDLabs/prova/synth/caravel-picorv32/macros/ram_128_1v1_0C.lib.  Cannot determine the voltage source of this internal power pin.  The signal pin related to it might have incorrect voltage.
+Type 'man IMPMSMV-1809' for more detail.
+Total number of combinational cells: 318
+Total number of sequential cells: 168
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+(stylus_db): Initialized design 'mgmt_core_wrapper'
+(stylus_db): Load Metric file ...
+% Begin Load Metric file (date=05/04 19:01:40, mem=1804.6M)
+% End Load Metric file (date=05/04 19:01:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=1807.8M, current mem=1805.8M)
+(stylus_db): Setting Root attributes ...
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+(stylus_db): Set 22 attributes of Root 
+% Begin Set DB preserves (date=05/04 19:01:40, mem=1806.8M)
+(stylus_db): Setting preserves on design objects ...
+(stylus_db): Set 3 preserves of design objects
+% End Set DB preserves (date=05/04 19:01:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=1806.8M, current mem=1806.8M)
+% Begin Load Timing views and constraints (date=05/04 19:01:40, mem=1806.8M)
+default_emulate_view
+(stylus_db): Read MMMC timing views ...
+Reading timing constraints file 'out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz' ...
+Current (total cpu=0:00:14.5, real=0:00:28.0, peak res=1913.4M, current mem=1913.4M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz, Line 10).
+
+mgmt_core_wrapper
+INFO (CTE): Reading of timing constraints file out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1928.2M, current mem=1927.9M)
+Current (total cpu=0:00:14.6, real=0:00:28.0, peak res=1928.2M, current mem=1927.9M)
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+% End Load Timing views and constraints (date=05/04 19:01:40, total cpu=0:00:00.2, real=0:00:00.0, peak res=1948.0M, current mem=1948.0M)
+(stylus_db): Couldn't load power-intent, (mgmt_core_wrapper.cpf or mgmt_core_wrapper.upf doesn't exists)
+(stylus_db): Couldn't commit power-intent, (mgmt_core_wrapper.cpf or mgmt_core_wrapper.upf doesn't exists)
+(stylus_db): Couldn't load DEF file, (DEF file doesn't exists)
+% Begin Set route_types (date=05/04 19:01:40, mem=1948.0M)
+(stylus_db): Setting route_types  ...
+% End Set route_types (date=05/04 19:01:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=1948.0M, current mem=1948.0M)
+% Begin Set power_domain attributes (date=05/04 19:01:40, mem=1948.0M)
+(stylus_db): Setting power_domain attributes ...
+% End Set power_domain attributes (date=05/04 19:01:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=1948.0M, current mem=1948.0M)
+(stylus_db): Load additional timing constraints ...
+% Begin Load Additional Timing constraints (date=05/04 19:01:40, mem=1948.0M)
+Loading path adjust file out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/pathadjust.sdc.gz ...
+Current (total cpu=0:00:14.7, real=0:00:28.0, peak res=1948.0M, current mem=1948.0M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1948.4M, current mem=1948.4M)
+Current (total cpu=0:00:14.7, real=0:00:28.0, peak res=1948.4M, current mem=1948.4M)
+% End Load Additional Timing constraints (date=05/04 19:01:40, total cpu=0:00:00.0, real=0:00:01.0, peak res=1948.4M, current mem=1948.4M)
+% Begin Set message attributes (date=05/04 19:01:41, mem=1948.4M)
+(stylus_db): Setting attributes on Genus message objects ...
+% End Set message attributes (date=05/04 19:01:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1948.4M, current mem=1948.4M)
+(stylus_db): Couldn't load SDP file, (file doesn't exists)
+% Begin Generate Vias (date=05/04 19:01:41, mem=1948.4M)
+(stylus_db): Generate advanced rule Vias ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% End Generate Vias (date=05/04 19:01:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1957.0M, current mem=1955.0M)
+% Begin Set attributes (date=05/04 19:01:41, mem=1955.0M)
+(stylus_db): Setting attributes on design objects ...
+(stylus_db): Set 12910 attributes of design objects
+% End Set attributes (date=05/04 19:01:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1957.3M, current mem=1957.3M)
+(stylus_db): Couldn't load RC preroute patterns, (mgmt_core_wrapper.extraction/ doesn't exists)
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/rcbest/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:02.1 real: 0:00:02.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/eda/trasllat/GPDK45/gpdk045_v_6_0/qrc/rcbest/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+(stylus_db): Couldn't load Min Layer File : out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.min_layer not found)
+(stylus_db): Couldn't load Routing congestion map, (mgmt_core_wrapper.route.congestion doesn't exists)
+(stylus_db): Couldn't load SCANDEF, (file doesn't exists)
+(stylus_db): Couldn't load TCF file, (file doesn't exists)
++----------------------------------------------------------------+
+    Summary of 'read_db mgmt_core_wrapper_m'                     
++----------------------------------------------------------------+
+    Generated by         :     Innovus 22.33-s094_1
+    Generated on         :     Mon May 04 19:01:43 CEST 2026
+    Design               :     mgmt_core_wrapper
+    process_node         :     45   
+    db units             :     2000 
+    tech_mfg_grid        :     0.005
+    bbox                 :     {0.0 0.0 599.06 596.79}
+    core_bbox            :     {0.0 0.0 599.06 596.79}
++----------------------------------------------------------------+
+    Object Type          :     Count
++-----------------------------------+
+    timing_libraries     :     2    
+    library_sets         :     1    
+    lib_cells            :     506  
+    setup_analysis_views :     1    
+    hold_analysis_views  :     1    
+    rc_corners           :     1    
+    delay_corners        :     1    
+    constraint_modes     :     1    
+    clocks               :     1    
++-----------------------------------+
+    base_cells           :     586  
+    modules              :     0    
+    insts                :     12065
+    ports                :     695  
+    nets                 :     13550
+    pg_nets              :     2    
++-----------------------------------+
+    layers               :     36   
+    via_defs             :     119  
+    via_def_rule         :     16   
+    sites                :     4    
+    core_rows            :     349  
+    track_patterns       :     22   
+    route_rules          :     2    
++-----------------------------------+
+#% End Load Common DB (date=05/04 19:01:43, total cpu=0:00:04.0, real=0:00:04.0, peak res=2143.1M, current mem=2013.0M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200           47  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           32  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPMSMV-1809         1  Internal pg_pin %s at %gv of cell %s doe...
+WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TA-976               1  Path groups asserted by the group_path c...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-459          1  Appending library '%s' to the previously...
+*** Message Summary: 125 warning(s), 0 error(s)
+
+0
+@innovus 2> gui_select -point {0.04150 0.04100}
+@innovus 3> gui_select -point {290.57450 287.10350}
+@innovus 4> gui_select -point {305.37050 331.49100}
+@innovus 5> gui_select -point {209.58650 280.09500}
+@innovus 6> gui_pan -98.02900 57.12750
+@innovus 7> gui_pan 0.24650 2.66300
+@innovus 8> gui_pan -20.88550 481.44100
+@innovus 9> gui_pan 24.77750 925.40750
+@innovus 10> set_io_flow_flag 0
+@innovus 11> create_floorplan -site CoreSite -core_size 800 596.79 0.0 0.0 0.0 0.0
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+@innovus 12> set_io_flow_flag 0
+@innovus 13> create_floorplan -site CoreSite -core_size 800.0 450 0.0 0.0 0.0 0.0
+The core height changes from 450.000000 to 449.920000 when snapping to grid "PlacementGrid".
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current create_floorplan objects are automatically derived based on specified new create_floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+@innovus 14> gui_pan 647.01550 789.45550
+@innovus 15> set_io_flow_flag 0
+@innovus 16> create_floorplan -site CoreSite -core_size 800.0 449.92 24 24 24 24
+**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 23.940000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 23.940000 due to track/row misalignment. To force the value, specify the -no_snap_to_grid option or use floorplan_set_snap_rule command to specify the die/core to different grid.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+@innovus 17> gui_pan 1171.27700 2270.51850
+@innovus 18> gui_pan -41.06350 -283.09150
+@innovus 19> gui_pan -23.64300 -102.66000
+@innovus 20> write_db DBS/spec_fp.invs
+
+#% Begin save design ... (date=05/04 19:24:55, mem=2210.1M)
+% Begin Save ccopt configuration ... (date=05/04 19:24:55, mem=2210.1M)
+% End Save ccopt configuration ... (date=05/04 19:24:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=2211.6M, current mem=2211.6M)
+% Begin Save netlist data ... (date=05/04 19:24:55, mem=2211.6M)
+Writing Binary DB to DBS/spec_fp.invs/mgmt_core_wrapper.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/04 19:24:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=2211.7M, current mem=2211.7M)
+Saving symbol-table file ...
+Saving congestion map file DBS/spec_fp.invs/mgmt_core_wrapper.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/04 19:24:55, mem=2212.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/04 19:24:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=2212.1M, current mem=2212.1M)
+Saving preference file DBS/spec_fp.invs/gui.pref.tcl ...
+Saving mode setting ...
+Saving root attributes to be loaded post write_db ...
+Saving global file ...
+Saving root attributes to be loaded previous write_db ...
+% Begin Save floorplan data ... (date=05/04 19:24:55, mem=2218.8M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/04 19:24:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=2218.8M, current mem=2218.8M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=05/04 19:24:55, mem=2218.8M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=05/04 19:24:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=2219.4M, current mem=2219.4M)
+% Begin Save routing data ... (date=05/04 19:24:55, mem=2219.4M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2517.1M) ***
+% End Save routing data ... (date=05/04 19:24:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=2219.7M, current mem=2219.7M)
+Saving property file DBS/spec_fp.invs/mgmt_core_wrapper.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2520.1M) ***
+Saving preRoute extracted patterns in file 'DBS/spec_fp.invs/mgmt_core_wrapper.techData.gz' ...
+Saving preRoute extraction data in directory 'DBS/spec_fp.invs/extraction/' ...
+% Begin Save power constraints data ... (date=05/04 19:24:56, mem=2223.2M)
+% End Save power constraints data ... (date=05/04 19:24:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=2223.2M, current mem=2223.2M)
+default_emulate_rc_corner
+default_emulate_rc_corner
+default_emulate_rc_corner
+Generated self-contained design spec_fp.invs
+default_emulate_libset_max
+default_emulate_rc_corner
+default_emulate_constraint_mode
+#% End save design ... (date=05/04 19:24:56, total cpu=0:00:00.7, real=0:00:01.0, peak res=2226.4M, current mem=2226.4M)
+out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz
+*** Message Summary: 0 warning(s), 0 error(s)
+
+0
+@innovus 21> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {24.2355 26.1315}
+@innovus 22> gui_deselect -all 
+@innovus 23> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {285.4795 26.1315}
+@innovus 24> gui_deselect -all 
+@innovus 25> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM128 -move {562.901 24.8875}
+@innovus 26> gui_deselect -all 
+@innovus 27> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {316.659 26.13}
+@innovus 28> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {19.259 24.8855}
+@innovus 29> gui_deselect -all 
+@innovus 30> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {1096.801 313.5765}
+@innovus 31> gui_deselect -all 
+@innovus 32> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {291.774 24.885}
+@innovus 33> gui_deselect -all 
+@innovus 34> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {27.897 27.3725}
+@innovus 35> gui_pan 131.29250 1.29900
+@innovus 36> gui_pan -197.46650 -88.78950
+@innovus 37> gui_select -point {404.83750 419.41000}
+@innovus 38> gui_select -toggle -point {162.55150 198.55900}
+@innovus 39> gui_select -toggle -point {391.84650 185.56800}
+@innovus 40> gui_select -toggle -point {696.49050 188.81550}
+@innovus 41> space_selected -fix_side top -space 0
+@innovus 42> align_selected -side top
+@innovus 43> align_selected -side bottom
+@innovus 44> align_selected -side top -refer_to_first
+@innovus 45> align_selected -side bottom -refer_to_first
+@innovus 46> flip_or_rotate_obj -flip MX -group
+@innovus 47> gui_select -point {-31.97000 329.53650}
+@innovus 48> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM128 -move {560.3015 27.37}
+@innovus 49> gui_select -toggle -point {177.83850 172.34250}
+@innovus 50> gui_select -toggle -point {427.27000 163.24850}
+@innovus 51> align_selected -side top
+@innovus 52> align_selected -side middle
+@innovus 53> space_selected -fix_side center -space 0
+@innovus 54> gui_select -point {-43.66200 213.91450}
+@innovus 55> gui_pan 8.28200 199.16350
+@innovus 56> gui_pan -200.21800 -159.04250
+@innovus 57> gui_pan 10.33350 16.31800
+@innovus 58> gui_pan 108.23600 173.06600
+@innovus 59> gui_pan 56.51550 197.04250
+@innovus 60> gui_pan -13.70050 214.51100
+@innovus 61> gui_select -point {30.06250 301.68250}
+@innovus 62> create_place_halo -halo_deltas {1.8 1.8 1.8 1.8} -snap_to_site -all_blocks
+@innovus 63> create_place_halo -halo_deltas {1.8 1.8 1.8 1.8} -snap_to_site -all_blocks
+@innovus 64> create_place_halo -halo_deltas {1.8 1.8 1.8 1.8} -snap_to_site -all_blocks
+@innovus 65> gui_select -point {624.18650 189.48200}
+@innovus 66> gui_select -append -point {454.28350 186.27650}
+@innovus 67> gui_select -append -point {245.91200 171.31650}
+@innovus 68> gui_select -point {1083.67300 189.48200}
+@innovus 69> gui_select -point {632.73550 187.34500}
+@innovus 70> gui_select -toggle -point {491.68350 185.20750}
+@innovus 71> gui_select -toggle -point {236.29450 185.20750}
+@innovus 72> space_selected -fix_side center -space 0
+@innovus 73> space_selected -fix_side left -space 0
+@innovus 74> gui_select -point {182.86600 169.17900}
+@innovus 75> gui_select -point {-89.62000 413.88250}
+@innovus 76> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {26.615 27.37}
+@innovus 77> gui_deselect -all 
+@innovus 78> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM128 -move {562.6435 27.37}
+@innovus 79> gui_pan -153.11950 -260.75000
+@innovus 80> gui_pan -76.43250 -136.69400
+@innovus 81> gui_deselect -all 
+@innovus 82> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {26.615 -245.9335}
+@innovus 83> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {25.843 -280.677}
+@innovus 84> gui_pan -1.25700 69.11400
+@innovus 85> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {25.845 -248.618}
+@innovus 86> gui_deselect -all 
+@innovus 87> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {298.369 -250.459}
+@innovus 88> gui_deselect -all 
+@innovus 89> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM128 -move {575.468 -250.459}
+@innovus 90> gui_select -toggle -point {175.74300 -106.76700}
+@innovus 91> gui_select -toggle -point {498.45250 -105.69850}
+@innovus 92> align_selected -side top -refer_to_first
+@innovus 93> space_selected -fix_side center -space 0
+@innovus 94> space_selected -fix_side center -space 0 -honor_halo
+@innovus 95> align_selected -side top -refer_to_first
+@innovus 96> gui_select -point {-227.10950 116.56500}
+@innovus 97> gui_select -point {-268.04350 -327.01150}
+@innovus 98> gui_select -rect {-215.24150 -335.81200 946.40550 107.97750}
+@innovus 99> gui_select -rect {418.38450 -112.03150 394.49750 -108.25950}
+@innovus 100> gui_select -point {75.17050 -89.40200}
+@innovus 101> gui_select -point {-34.20550 -260.38000}
+@innovus 102> gui_select -rect {-44.26300 -305.63900 933.83400 66.49050}
+@innovus 103> gui_select -point {906.17550 -145.97550}
+@innovus 104> gui_select -point {691.19550 -117.06000}
+@innovus 105> gui_select -toggle -point {441.01350 -101.97350}
+@innovus 106> gui_select -toggle -point {195.86100 -117.06000}
+@innovus 107> gui_select -rect {233.57650 -96.94500 184.54600 -89.40200}
+@innovus 108> gui_select -point {180.77450 -109.51700}
+@innovus 109> gui_select -toggle -point {452.32850 -107.00250}
+@innovus 110> gui_select -toggle -point {750.28350 -109.51700}
+@innovus 111> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM128 -move {556.9115 -249.2025}
+@innovus 112> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {293.1115 -249.2025}
+@innovus 113> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {29.3115 -249.2025}
+@innovus 114> gui_pan -127.66500 -258.65250
+@innovus 115> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM128 -move {559.8375 27.482}
+@innovus 116> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank1 -move {296.0375 27.482}
+@innovus 117> update_floorplan_obj -obj inst:mgmt_core_wrapper/core_RAM256_bank0 -move {32.2375 27.482}
+@innovus 118> space_selected -fix_side center -space 0 -honor_halo
+@innovus 119> space_selected -fix_side center -space 0 -honor_halo
+@innovus 120> space_selected -fix_side top -space 0 -honor_halo
+@innovus 121> space_selected -fix_side center -space 0 -honor_halo
+@innovus 122> space_selected -fix_side center -space 0 -honor_halo
+@innovus 123> align_selected -side top -refer_to_first
+@innovus 124> space_selected -fix_side center -space 0 -honor_halo
+@innovus 125> space_selected -fix_side center -space 0 -honor_halo
+@innovus 126> gui_select -point {-205.14450 258.32500}
+@innovus 127> gui_pan -151.04050 -64.58850
+@innovus 128> gui_pan -66.48500 -43.19050
+@innovus 129> gui_select -point {959.79900 455.80050}
+@innovus 130> gui_pan -49.67250 -40.89800
+@innovus 131> gui_select -point {78.11100 -9.67000}
+@innovus 132> write_db DBS/fp_macros1.invs
+#% Begin save design ... (date=05/04 19:37:34, mem=2242.5M)
+% Begin Save ccopt configuration ... (date=05/04 19:37:34, mem=2242.5M)
+% End Save ccopt configuration ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2242.5M, current mem=2242.5M)
+% Begin Save netlist data ... (date=05/04 19:37:34, mem=2242.5M)
+Writing Binary DB to DBS/fp_macros1.invs/mgmt_core_wrapper.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2242.5M, current mem=2242.5M)
+Saving symbol-table file ...
+Saving congestion map file DBS/fp_macros1.invs/mgmt_core_wrapper.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/04 19:37:34, mem=2242.5M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2242.5M, current mem=2242.5M)
+Saving preference file DBS/fp_macros1.invs/gui.pref.tcl ...
+Saving mode setting ...
+Saving root attributes to be loaded post write_db ...
+Saving global file ...
+Saving root attributes to be loaded previous write_db ...
+% Begin Save floorplan data ... (date=05/04 19:37:34, mem=2243.7M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2243.7M, current mem=2243.7M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=05/04 19:37:34, mem=2243.7M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2243.7M, current mem=2243.7M)
+% Begin Save routing data ... (date=05/04 19:37:34, mem=2243.7M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2580.9M) ***
+% End Save routing data ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2243.7M, current mem=2243.7M)
+Saving property file DBS/fp_macros1.invs/mgmt_core_wrapper.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2583.9M) ***
+Saving preRoute extracted patterns in file 'DBS/fp_macros1.invs/mgmt_core_wrapper.techData.gz' ...
+Saving preRoute extraction data in directory 'DBS/fp_macros1.invs/extraction/' ...
+% Begin Save power constraints data ... (date=05/04 19:37:34, mem=2243.8M)
+% End Save power constraints data ... (date=05/04 19:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=2243.8M, current mem=2243.8M)
+default_emulate_rc_corner
+default_emulate_rc_corner
+default_emulate_rc_corner
+Generated self-contained design fp_macros1.invs
+default_emulate_libset_max
+default_emulate_rc_corner
+default_emulate_constraint_mode
+#% End save design ... (date=05/04 19:37:35, total cpu=0:00:00.6, real=0:00:01.0, peak res=2276.8M, current mem=2244.6M)
+out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz
+*** Message Summary: 0 warning(s), 0 error(s)
+
+0
+@innovus 133> get_db init_power_nets
+VDD
+@innovus 140> get_db init_ground_nets
+[5C
+VSS
+@innovus 141> connect_global_net VDD -type pgpin -pin VDD -all
+@innovus 142> connect_global_net VSS -type pgpin -pin VSS -all
+[5C
+@innovus 143> connect_global_net VDD -type tiehi
+
+@innovus 144> connect_global_net VSS -type tielo
+
+@innovus 145> gui_select -point {953.18100 103.86250}
+@innovus 146> set_db add_rings_target default ; set_db add_rings_extend_over_row 0 ; set_db add_rings_ignore_rows 0 ; set_db add_rings_avoid_short 0 ; set_db add_rings_skip_shared_inner_ring none ; set_db add_rings_stacked_via_top_layer Metal11 ; set_db add_rings_stacked_via_bottom_layer Metal1 ; set_db add_rings_via_using_exact_crossover_size 1 ; set_db add_rings_orthogonal_only true ; set_db add_rings_skip_via_on_pin {  standardcell } ; set_db add_rings_skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+add_rings command will ignore shorts while creating rings.
+@innovus 147> The ring targets are set to core/block ring wires.
+add_rings command will consider rows while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will ignore shorts while creating rings.
+add_rings -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 9 bottom 9 left 9 right 9} -spacing {top 2 bottom 2 left 2 right 2} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid none
+#% Begin add_rings (date=05/04 19:43:51, mem=2312.6M)
+
+
+viaInitial starts at Mon May  4 19:43:51 2026
+viaInitial ends at Mon May  4 19:43:51 2026
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2600.6M)
+Ring generation is complete.
+vias are now being generated.
+add_rings created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal8 |        4       |       NA       |
+|  Via8  |        8       |        0       |
+| Metal9 |        4       |       NA       |
++--------+----------------+----------------+
+#% End add_rings (date=05/04 19:43:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=2314.6M, current mem=2314.6M)
+@innovus 148> gui_select -point {869.88400 139.01550}
+@innovus 149> set_layer_preference pinObj -is_visible 1
+@innovus 150> gui_pan 26.28350 259.29600
+@innovus 151> set_db add_stripes_ignore_block_check false ; set_db add_stripes_break_at none ; set_db add_stripes_route_over_rows_only false ; set_db add_stripes_rows_without_stripes_only false ; set_db add_stripes_extend_to_closest_target none ; set_db add_stripes_stop_at_last_wire_for_area false ; set_db add_stripes_partial_set_through_domain false ; set_db add_stripes_ignore_non_default_domains false ; set_db add_stripes_trim_antenna_back_to_shape none ; set_db add_stripes_spacing_type edge_to_edge ; set_db add_stripes_spacing_from_block 0 ; set_db add_stripes_stripe_min_length stripe_width ; set_db add_stripes_stacked_via_top_layer Metal11 ; set_db add_stripes_stacked_via_bottom_layer Metal1 ; set_db add_stripes_via_using_exact_crossover_size false ; set_db add_stripes_split_vias false ; set_db add_stripes_orthogonal_only true ; set_db add_stripes_allow_jog { padcore_ring  block_ring } ; set_db add_stripes_skip_via_on_pin {  standardcell } ; set_db add_stripes_skip_via_on_wire_shape {  noshape   }
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not be created over regions without power planning wires.
+Stripes will not extend to closest target.
+Stripes will stop at the boundary of the specified area.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Offset for stripe breaking is set to 0.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+@innovus 152> add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+add_stripes -nets {VDD VSS} -layer Metal10 -direction vertical -width 5 -spacing 2 -set_to_set_distance 200 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit Metal11 -pad_core_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=05/04 19:47:58, mem=2340.0M)
+
+Initialize fgc environment(mem: 2613.0M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.0M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.0M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.0M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.0M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 8 wires.
+ViaGen created 96 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via5  |       16       |        0       |
+|  Via6  |       16       |        0       |
+|  Via7  |       16       |        0       |
+|  Via8  |       16       |        0       |
+|  Via9  |       32       |        0       |
+| Metal10|        8       |       NA       |
++--------+----------------+----------------+
+#% End add_stripes (date=05/04 19:47:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=2341.1M, current mem=2341.1M)
+@innovus 153> gui_pan -142.80400 -87.31200
+@innovus 154> set_db add_stripes_ignore_block_check false ; set_db add_stripes_break_at none ; set_db add_stripes_route_over_rows_only false ; set_db add_stripes_rows_without_stripes_only false ; set_db add_stripes_extend_to_closest_target none ; set_db add_stripes_stop_at_last_wire_for_area false ; set_db add_stripes_partial_set_through_domain false ; set_db add_stripes_ignore_non_default_domains false ; set_db add_stripes_trim_antenna_back_to_shape none ; set_db add_stripes_spacing_type edge_to_edge ; set_db add_stripes_spacing_from_block 0 ; set_db add_stripes_stripe_min_length stripe_width ; set_db add_stripes_stacked_via_top_layer Metal11 ; set_db add_stripes_stacked_via_bottom_layer Metal1 ; set_db add_stripes_via_using_exact_crossover_size false ; set_db add_stripes_split_vias false ; set_db add_stripes_orthogonal_only true ; set_db add_stripes_allow_jog { padcore_ring  block_ring } ; set_db add_stripes_skip_via_on_pin {  standardcell } ; set_db add_stripes_skip_via_on_wire_shape {  noshape   }
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not be created over regions without power planning wires.
+Stripes will not extend to closest target.
+Stripes will stop at the boundary of the specified area.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Offset for stripe breaking is set to 0.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+@innovus 155> add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+add_stripes -nets {VDD VSS} -layer Metal10 -direction vertical -width 5 -spacing 2 -set_to_set_distance 200 -start_from left -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit Metal11 -pad_core_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=05/04 19:49:07, mem=2349.6M)
+
+Initialize fgc environment(mem: 2612.9M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.9M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.9M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.9M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.9M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 8 wires.
+ViaGen created 96 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via5  |       16       |        0       |
+|  Via6  |       16       |        0       |
+|  Via7  |       16       |        0       |
+|  Via8  |       16       |        0       |
+|  Via9  |       32       |        0       |
+| Metal10|        8       |       NA       |
++--------+----------------+----------------+
+#% End add_stripes (date=05/04 19:49:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=2349.6M, current mem=2349.6M)
+@innovus 156> gui_select -point {279.78550 444.23200}
+@innovus 157> gui_pan -171.36550 -17.49700
+@innovus 158> gui_select -point {283.02250 342.72200}
+@innovus 159> delete_routes -shape stripe
+@innovus 160> set_db add_stripes_ignore_block_check false ; set_db add_stripes_break_at none ; set_db add_stripes_route_over_rows_only false ; set_db add_stripes_rows_without_stripes_only false ; set_db add_stripes_extend_to_closest_target none ; set_db add_stripes_stop_at_last_wire_for_area false ; set_db add_stripes_partial_set_through_domain false ; set_db add_stripes_ignore_non_default_domains false ; set_db add_stripes_trim_antenna_back_to_shape none ; set_db add_stripes_spacing_type edge_to_edge ; set_db add_stripes_spacing_from_block 0 ; set_db add_stripes_stripe_min_length stripe_width ; set_db add_stripes_stacked_via_top_layer Metal11 ; set_db add_stripes_stacked_via_bottom_layer Metal1 ; set_db add_stripes_via_using_exact_crossover_size false ; set_db add_stripes_split_vias false ; set_db add_stripes_orthogonal_only true ; set_db add_stripes_allow_jog { padcore_ring  block_ring } ; set_db add_stripes_skip_via_on_pin {  standardcell } ; set_db add_stripes_skip_via_on_wire_shape {  noshape   }
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not be created over regions without power planning wires.
+Stripes will not extend to closest target.
+Stripes will stop at the boundary of the specified area.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Offset for stripe breaking is set to 0.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+@innovus 161> add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+add_stripes -nets {VDD VSS} -layer Metal10 -direction vertical -width 5 -spacing 2 -set_to_set_distance 200 -start_from left -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit Metal11 -pad_core_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=05/04 19:49:50, mem=2353.9M)
+
+Initialize fgc environment(mem: 2612.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.8M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.8M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.8M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2612.8M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 8 wires.
+ViaGen created 96 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via5  |       16       |        0       |
+|  Via6  |       16       |        0       |
+|  Via7  |       16       |        0       |
+|  Via8  |       16       |        0       |
+|  Via9  |       32       |        0       |
+| Metal10|        8       |       NA       |
++--------+----------------+----------------+
+#% End add_stripes (date=05/04 19:49:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=2353.9M, current mem=2353.9M)
+@innovus 162> set_db add_stripes_ignore_block_check false ; set_db add_stripes_break_at none ; set_db add_stripes_route_over_rows_only false ; set_db add_stripes_rows_without_stripes_only false ; set_db add_stripes_extend_to_closest_target none ; set_db add_stripes_stop_at_last_wire_for_area false ; set_db add_stripes_partial_set_through_domain false ; set_db add_stripes_ignore_non_default_domains false ; set_db add_stripes_trim_antenna_back_to_shape none ; set_db add_stripes_spacing_type edge_to_edge ; set_db add_stripes_spacing_from_block 0 ; set_db add_stripes_stripe_min_length stripe_width ; set_db add_stripes_stacked_via_top_layer Metal11 ; set_db add_stripes_stacked_via_bottom_layer Metal1 ; set_db add_stripes_via_using_exact_crossover_size false ; set_db add_stripes_split_vias false ; set_db add_stripes_orthogonal_only true ; set_db add_stripes_allow_jog { padcore_ring  block_ring } ; set_db add_stripes_skip_via_on_pin {  standardcell } ; set_db add_stripes_skip_via_on_wire_shape {  noshape   }
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not be created over regions without power planning wires.
+Stripes will not extend to closest target.
+Stripes will stop at the boundary of the specified area.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Offset for stripe breaking is set to 0.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+@innovus 163> add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+add_stripes -nets {VDD VSS} -layer Metal11 -direction horizontal -width 5 -spacing 2 -set_to_set_distance 200 -start_from bottom -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit Metal11 -pad_core_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=05/04 19:50:05, mem=2354.8M)
+
+Initialize fgc environment(mem: 2613.7M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.7M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.7M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.7M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2613.7M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 4 wires.
+ViaGen created 124 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via4  |       12       |        0       |
+|  Via5  |       12       |        0       |
+|  Via6  |       12       |        0       |
+|  Via7  |       12       |        0       |
+|  Via8  |       20       |        0       |
+|  Via9  |       20       |        0       |
+|  Via10 |       36       |        0       |
+| Metal11|        4       |       NA       |
++--------+----------------+----------------+
+#% End add_stripes (date=05/04 19:50:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=2354.8M, current mem=2354.8M)
+@innovus 164> delete_routes -shape stripe
+@innovus 165> set_db add_stripes_ignore_block_check false ; set_db add_stripes_break_at none ; set_db add_stripes_route_over_rows_only false ; set_db add_stripes_rows_without_stripes_only false ; set_db add_stripes_extend_to_closest_target none ; set_db add_stripes_stop_at_last_wire_for_area false ; set_db add_stripes_partial_set_through_domain false ; set_db add_stripes_ignore_non_default_domains false ; set_db add_stripes_trim_antenna_back_to_shape none ; set_db add_stripes_spacing_type edge_to_edge ; set_db add_stripes_spacing_from_block 0 ; set_db add_stripes_stripe_min_length stripe_width ; set_db add_stripes_stacked_via_top_layer Metal11 ; set_db add_stripes_stacked_via_bottom_layer Metal1 ; set_db add_stripes_via_using_exact_crossover_size false ; set_db add_stripes_split_vias false ; set_db add_stripes_orthogonal_only true ; set_db add_stripes_allow_jog { padcore_ring  block_ring } ; set_db add_stripes_skip_via_on_pin {  standardcell } ; set_db add_stripes_skip_via_on_wire_shape {  noshape   }
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not be created over regions without power planning wires.
+Stripes will not extend to closest target.
+Stripes will stop at the boundary of the specified area.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Offset for stripe breaking is set to 0.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+@innovus 166> add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+add_stripes -nets {VDD VSS} -layer Metal11 -direction horizontal -width 5 -spacing 2 -set_to_set_distance 100 -start_from bottom -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit Metal11 -pad_core_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=05/04 19:50:36, mem=2356.4M)
+
+Initialize fgc environment(mem: 2614.6M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.6M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.6M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.6M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.6M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 8 wires.
+ViaGen created 300 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via4  |       36       |        0       |
+|  Via5  |       36       |        0       |
+|  Via6  |       36       |        0       |
+|  Via7  |       36       |        0       |
+|  Via8  |       52       |        0       |
+|  Via9  |       52       |        0       |
+|  Via10 |       52       |        0       |
+| Metal11|        8       |       NA       |
++--------+----------------+----------------+
+#% End add_stripes (date=05/04 19:50:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=2356.4M, current mem=2356.4M)
+@innovus 167> set_db add_stripes_ignore_block_check false ; set_db add_stripes_break_at none ; set_db add_stripes_route_over_rows_only false ; set_db add_stripes_rows_without_stripes_only false ; set_db add_stripes_extend_to_closest_target none ; set_db add_stripes_stop_at_last_wire_for_area false ; set_db add_stripes_partial_set_through_domain false ; set_db add_stripes_ignore_non_default_domains false ; set_db add_stripes_trim_antenna_back_to_shape none ; set_db add_stripes_spacing_type edge_to_edge ; set_db add_stripes_spacing_from_block 0 ; set_db add_stripes_stripe_min_length stripe_width ; set_db add_stripes_stacked_via_top_layer Metal11 ; set_db add_stripes_stacked_via_bottom_layer Metal1 ; set_db add_stripes_via_using_exact_crossover_size false ; set_db add_stripes_split_vias false ; set_db add_stripes_orthogonal_only true ; set_db add_stripes_allow_jog { padcore_ring  block_ring } ; set_db add_stripes_skip_via_on_pin {  standardcell } ; set_db add_stripes_skip_via_on_wire_shape {  noshape   }
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not be created over regions without power planning wires.
+Stripes will not extend to closest target.
+Stripes will stop at the boundary of the specified area.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Offset for stripe breaking is set to 0.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+@innovus 168> add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+add_stripes -nets {VDD VSS} -layer Metal10 -direction vertical -width 5 -spacing 2 -set_to_set_distance 100 -start_from left -start_offset 50 -switch_layer_over_obs false -max_same_layer_jog_length 2 -pad_core_ring_top_layer_limit Metal11 -pad_core_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid none
+#% Begin add_stripes (date=05/04 19:50:45, mem=2355.5M)
+
+Initialize fgc environment(mem: 2614.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.5M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.5M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.5M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2614.5M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+add_stripes created 17 wires.
+ViaGen created 254 vias, deleted 4 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  Via5  |       32       |        0       |
+|  Via6  |       32       |        0       |
+|  Via7  |       32       |        0       |
+|  Via8  |       32       |        0       |
+|  Via9  |       64       |        0       |
+| Metal10|       17       |       NA       |
+|  Via10 |       62       |        4       |
++--------+----------------+----------------+
+#% End add_stripes (date=05/04 19:50:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=2355.5M, current mem=2355.5M)
+@innovus 169> set_db route_special_via_connect_to_shape { stripe blockring }
+@innovus 170> route_special -connect {core_pin} -layer_change_range { Metal1(1) Metal11(11) } -block_pin_target {nearest_target} -core_pin_target {none} -allow_jogging 1 -crossover_via_layer_range { Metal1(1) Metal11(11) } -nets { VDD VSS } -allow_layer_change 1 -target_via_layer_range { Metal1(1) Metal11(11) }
+#% Begin route_special (date=05/04 19:53:30, mem=2360.1M)
+**WARN: (IMPSR-4058):	Route_special option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Mon May  4 19:53:30 2026 ***
+SPECIAL ROUTE ran on directory: /home/alumnes/j/juli.serra/DNDLabs/prova/synth/caravel-picorv32/R1
+SPECIAL ROUTE ran on machine: c4d3 (Linux 4.18.0-553.56.1.el8_10.x86_64 x86_64 2.10Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 11
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring blockpin coverpin noshape blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteStopSCPin set to true
+srouteTopLayerLimit set to 11
+srouteTopTargetLayerLimit set to 11
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 38.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 24 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 586 macros, 124 used
+Read in 126 components
+  123 core components: 123 unplaced, 0 placed, 0 fixed
+  3 block/ring components: 0 unplaced, 0 placed, 3 fixed
+Read in 695 logical pins
+Read in 4 blockages
+Read in 686 nets
+Read in 2 special nets, 2 routed
+Read in 252 terminals
+2 nets selected.
+
+Begin power routing ...
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of Core ports routed: 0
+  Number of Followpin connections: 425
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 46.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+route_special created 425 wires.
+ViaGen created 7416 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       425      |       NA       |
+|  Via1  |       824      |        0       |
+|  Via2  |       824      |        0       |
+|  Via3  |       824      |        0       |
+|  Via4  |       824      |        0       |
+|  Via5  |       824      |        0       |
+|  Via6  |       824      |        0       |
+|  Via7  |       824      |        0       |
+|  Via8  |       824      |        0       |
+|  Via9  |       824      |        0       |
++--------+----------------+----------------+
+#% End route_special (date=05/04 19:53:30, total cpu=0:00:00.3, real=0:00:00.0, peak res=2379.1M, current mem=2364.8M)
+@innovus 171> gui_select -point {285.34000 69.39250}
+@innovus 172> gui_pan -29.76450 -107.17150
+@innovus 173> write_db DBS/power1.invs
+[5C
+#% Begin save design ... (date=05/04 19:56:38, mem=2373.8M)
+% Begin Save ccopt configuration ... (date=05/04 19:56:38, mem=2373.8M)
+% End Save ccopt configuration ... (date=05/04 19:56:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=2374.1M, current mem=2374.1M)
+% Begin Save netlist data ... (date=05/04 19:56:38, mem=2374.1M)
+Writing Binary DB to DBS/power1.invs/mgmt_core_wrapper.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/04 19:56:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=2374.1M, current mem=2374.1M)
+Saving symbol-table file ...
+Saving congestion map file DBS/power1.invs/mgmt_core_wrapper.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/04 19:56:38, mem=2374.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/04 19:56:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=2374.1M, current mem=2374.1M)
+Saving preference file DBS/power1.invs/gui.pref.tcl ...
+Saving mode setting ...
+Saving root attributes to be loaded post write_db ...
+Saving global file ...
+Saving root attributes to be loaded previous write_db ...
+% Begin Save floorplan data ... (date=05/04 19:56:38, mem=2375.6M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/04 19:56:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=2375.6M, current mem=2375.6M)
+Saving PG file DBS/power1.invs/mgmt_core_wrapper.pg.gz, version#2, (Created by Innovus v22.33-s094_1 on Mon May  4 19:56:38 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2622.0M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=05/04 19:56:38, mem=2375.6M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=05/04 19:56:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=2375.8M, current mem=2375.8M)
+% Begin Save routing data ... (date=05/04 19:56:38, mem=2375.8M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2622.0M) ***
+% End Save routing data ... (date=05/04 19:56:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=2375.8M, current mem=2373.5M)
+Saving property file DBS/power1.invs/mgmt_core_wrapper.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2625.0M) ***
+Saving preRoute extracted patterns in file 'DBS/power1.invs/mgmt_core_wrapper.techData.gz' ...
+Saving preRoute extraction data in directory 'DBS/power1.invs/extraction/' ...
+% Begin Save power constraints data ... (date=05/04 19:56:39, mem=2373.5M)
+% End Save power constraints data ... (date=05/04 19:56:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=2373.5M, current mem=2373.5M)
+default_emulate_rc_corner
+default_emulate_rc_corner
+default_emulate_rc_corner
+Generated self-contained design power1.invs
+default_emulate_libset_max
+default_emulate_rc_corner
+default_emulate_constraint_mode
+#% End save design ... (date=05/04 19:56:39, total cpu=0:00:00.6, real=0:00:01.0, peak res=2408.5M, current mem=2370.4M)
+out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz
+*** Message Summary: 0 warning(s), 0 error(s)
+
+0
+@innovus 174> write_db mgmt_core_wrapper
+#% Begin save design ... (date=05/04 19:56:58, mem=2384.0M)
+% Begin Save ccopt configuration ... (date=05/04 19:56:58, mem=2384.0M)
+% End Save ccopt configuration ... (date=05/04 19:56:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=2384.0M, current mem=2384.0M)
+% Begin Save netlist data ... (date=05/04 19:56:58, mem=2384.0M)
+Writing Binary DB to mgmt_core_wrapper/mgmt_core_wrapper.v.bin in single-threaded mode...
+% End Save netlist data ... (date=05/04 19:56:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=2384.0M, current mem=2384.0M)
+Saving symbol-table file ...
+Saving congestion map file mgmt_core_wrapper/mgmt_core_wrapper.route.congmap.gz ...
+% Begin Save AAE data ... (date=05/04 19:56:58, mem=2384.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=05/04 19:56:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=2384.0M, current mem=2384.0M)
+Saving preference file mgmt_core_wrapper/gui.pref.tcl ...
+Saving mode setting ...
+Saving root attributes to be loaded post write_db ...
+Saving global file ...
+Saving root attributes to be loaded previous write_db ...
+% Begin Save floorplan data ... (date=05/04 19:56:58, mem=2384.1M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=05/04 19:56:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=2384.1M, current mem=2384.1M)
+Saving PG file mgmt_core_wrapper/mgmt_core_wrapper.pg.gz, version#2, (Created by Innovus v22.33-s094_1 on Mon May  4 19:56:58 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2626.5M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=05/04 19:56:58, mem=2384.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=05/04 19:56:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=2384.1M, current mem=2384.1M)
+% Begin Save routing data ... (date=05/04 19:56:58, mem=2384.1M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=2626.5M) ***
+% End Save routing data ... (date=05/04 19:56:59, total cpu=0:00:00.0, real=0:00:01.0, peak res=2384.1M, current mem=2384.1M)
+Saving property file mgmt_core_wrapper/mgmt_core_wrapper.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2629.5M) ***
+Saving preRoute extracted patterns in file 'mgmt_core_wrapper/mgmt_core_wrapper.techData.gz' ...
+Saving preRoute extraction data in directory 'mgmt_core_wrapper/extraction/' ...
+% Begin Save power constraints data ... (date=05/04 19:56:59, mem=2384.1M)
+% End Save power constraints data ... (date=05/04 19:56:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=2384.1M, current mem=2384.1M)
+default_emulate_rc_corner
+default_emulate_rc_corner
+default_emulate_rc_corner
+Generated self-contained design mgmt_core_wrapper
+default_emulate_libset_max
+default_emulate_rc_corner
+default_emulate_constraint_mode
+#% End save design ... (date=05/04 19:56:59, total cpu=0:00:00.6, real=0:00:01.0, peak res=2414.5M, current mem=2384.0M)
+out_May04-18:57:45/mgmt_core_wrapper_m/cmn/mgmt_core_wrapper.mmmc/modes/default_emulate_constraint_mode/default_emulate_constraint_mode.sdc.gz
+*** Message Summary: 0 warning(s), 0 error(s)
+
+@innovus 175> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon May  4 19:57:10 2026
+  Total CPU time:     0:02:30
+  Total real time:    0:56:00
+  Peak memory (main): 2403.92MB
+
+
+*** Memory Usage v#1 (Current mem = 2638.414M, initial mem = 642.211M) ***
+*** Message Summary: 137 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:30, real=0:55:58, mem=2638.4M) ---
