@@ -1,0 +1,32 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May 18 18:43:17 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.33-s094_1 (64bit) 08/25/2023 16:48 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.33-s094_1 NR230808-0153/22_13-UB (database version 18.20.615_1) {superthreading v2.20}
+#@(#)CDS: AAE 22.13-s029 (64bit) 08/25/2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.13-s030_1 () Aug 22 2023 02:51:11 ( )
+#@(#)CDS: SYNTECH 22.13-s015_1 () Aug 20 2023 22:21:55 ( )
+#@(#)CDS: CPE v22.13-s082
+#@(#)CDS: IQuantus/TQuantus 21.2.2-s211 (64bit) Tue Jun 20 22:12:10 PDT 2023 (Linux 3.10.0-693.el7.x86_64)
+
+read_db DBS/fp_final/
+set_db place_global_place_io_pins FALSE
+set_db design_top_routing_layer 4 
+get_distributed_hosts -timeOut
+get_distributed_hosts -mode
+set_multi_cpu_usage -local_cpu 4 -cpu_per_remote_host 1 -remote_host 0 -keep_license true
+set_distributed_hosts -local
+set_multi_cpu_usage -local_cpu 4 -cpu_per_remote_host 1 -remote_host 0 -keep_license true
+set_distributed_hosts -local
+set_db place_design_floorplan_mode false
+place_design
+set_layer_preference routeCongest -is_visible 1
+set_layer_preference routeCongest -is_visible 0
+set_layer_preference congChan -is_visible 1
+set_layer_preference routeCongest -is_visible 1
+set_db design_top_routing_layer 6 
+place_design

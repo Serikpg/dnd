@@ -1,0 +1,109 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon May 18 18:08:20 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.33-s094_1 (64bit) 08/25/2023 16:48 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.33-s094_1 NR230808-0153/22_13-UB (database version 18.20.615_1) {superthreading v2.20}
+#@(#)CDS: AAE 22.13-s029 (64bit) 08/25/2023 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.13-s030_1 () Aug 22 2023 02:51:11 ( )
+#@(#)CDS: SYNTECH 22.13-s015_1 () Aug 20 2023 22:21:55 ( )
+#@(#)CDS: CPE v22.13-s082
+#@(#)CDS: IQuantus/TQuantus 21.2.2-s211 (64bit) Tue Jun 20 22:12:10 PDT 2023 (Linux 3.10.0-693.el7.x86_64)
+
+read_db DBS/placed/
+cp /eda/trasllat/mnd_files/caravel-picorv32/Scripts/config_cui.tcl ../Scripts/
+cp /eda/trasllat/mnd_files/caravel-picorv32/Scripts/runCCopt_cui.tcl ../Scripts/
+#@ source ../Scripts/runCCopt_cui.tcl
+#@ Begin verbose source (pre): source ../Scripts/runCCopt_cui.tcl
+set_db timing_report_fields {instance arc net cell slew delay arrival required}
+#@ source ../Scripts/config_cui.tcl
+#@ Begin verbose source ../Scripts/config_cui.tcl (pre)
+set_db timing_analysis_type ocv
+set_db timing_analysis_cppr both
+set_db cts_buffer_cells {CLKBUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20} 
+set_db cts_inverter_cells {CLKINVX8 CLKINVX12 CLKINVX16 CLKINVX20} 
+set_db cts_clock_gating_cells TLAT* 
+set_db cts_target_skew 0.200 
+set_db cts_target_max_transition_time 0.200 
+set_db route_design_detail_use_multi_cut_via_effort high
+set_db design_top_routing_layer 9 
+create_route_rule -width {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 \
+        Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 } \
+        -spacing {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 \
+        Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 } -name 2w2s
+create_route_type -name leafNDR -top_preferred_layer 5 -bottom_preferred_layer 4 -preferred_routing_layer_effort high 
+create_route_type -name trunkNDR -route_rule 2w2s \
+     -top_preferred_layer 6 -bottom_preferred_layer 5 -preferred_routing_layer_effort high \
+     -shield_net VSS
+set_db cts_route_type_top trunkNDR 
+set_db cts_route_type_trunk trunkNDR 
+set_db cts_route_type_leaf leafNDR 
+set_db cts_route_type_auto_trim false 
+#@ End verbose source ../Scripts/config_cui.tcl
+create_clock_tree_spec -out_file ccopt.spec
+#@ source ./ccopt.spec
+#@ Begin verbose source ./ccopt.spec (pre)
+if { [get_db clock_trees] != {} } {...}
+namespace eval ::ccopt {}
+namespace eval ::ccopt::ilm {}
+set ::ccopt::ilm::ccoptSpecRestoreData {}
+if { [catch {ccopt_check_and_flatten_ilms_no_restore}] } {...}
+set ::ccopt::ilm::ccoptSpecRestoreData $::ccopt::ilm::ccoptRestoreILMState
+set_db port:core_clk .cts_is_sdc_clock_root true
+create_clock_tree -name myclock -source core_clk -no_skew_group
+set_db clock_tree:myclock .cts_clock_tree_source_output_max_transition_time_early -index delay_corner:default_emulate_delay_corner 0.015
+set_db clock_tree:myclock .cts_clock_tree_source_output_max_transition_time_late -index delay_corner:default_emulate_delay_corner 0.015
+set_db port:core_clk .cts_clock_period 4
+set_db cts_timing_connectivity_info {}
+create_skew_group -name myclock/default_emulate_constraint_mode -sources core_clk -auto_sinks
+set_db skew_group:myclock/default_emulate_constraint_mode .cts_skew_group_include_source_latency true
+set_db skew_group:myclock/default_emulate_constraint_mode .cts_skew_group_created_from_clock myclock
+set_db skew_group:myclock/default_emulate_constraint_mode .cts_skew_group_created_from_constraint_modes {default_emulate_constraint_mode  }
+set_db skew_group:myclock/default_emulate_constraint_mode .cts_skew_group_created_from_delay_corners default_emulate_delay_corner
+check_clock_tree_convergence
+if { [get_db ccopt_auto_design_state_for_ilms] == 0 } {...}
+#@ End verbose source ./ccopt.spec
+set_db opt_useful_skew_ccopt standard
+ccopt_design
+write_db ./DBS/postcts.enc
+if {1} {
+report_skew_groups
+report_clock_trees
+report_ccopt_worst_chain
+}
+#@ End verbose source: ../Scripts/runCCopt_cui.tcl
+time_design -post_cts -hold
+set_db route_detail_fix_antenna 1
+set_db route_antenna_diode_insertion 0
+set_db route_with_timing_driven 0
+set_db route_with_eco 0
+set_db route_with_litho_driven 0
+set_db route_detail_post_route_litho_repair 0
+set_db route_with_si_driven 0
+set_db route_detail_auto_stop 0
+set_db route_selected_net_only 0
+set_db route_top_routing_layer 11
+set_db route_bottom_routing_layer 1
+set_db route_detail_end_iteration 1
+set_db route_with_timing_driven false
+set_db route_with_si_driven false
+route_design -global_detail
+time_design -post_cts -hold
+time_design -post_route -hold
+time_design -post_cts -hold
+opt_design -post_route -setup -hold
+opt_design -post_route -setup -hold
+gui_select -point {586.06550 335.61650}
+gui_select -point {495.12700 355.10300}
+add_fillers -base_cells FILL1 FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 -prefix FILLER
+check_drc 
+delete_routes -regular_wire_with_drc
+route_design
+check_drc 
+write_db DBS/final
+report_summary -out_dir summaryReport
+write_db DBS/final
+read_db DBS/fp_final/

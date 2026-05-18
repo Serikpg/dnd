@@ -1,0 +1,5 @@
+2026/05/18 18:06:25 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/05/18 18:06:25 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+/bin/cp: cannot stat '/home/serik.perez/.cds_pvsui/*': No such file or directory
+2026/05/18 18:06:26 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/05/18 18:06:26 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>

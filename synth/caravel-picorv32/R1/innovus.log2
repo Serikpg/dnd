@@ -1,0 +1,1079 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.33-s094_1, built Fri Aug 25 16:48:21 PDT 2023
+Options:	-stylus 
+Date:		Mon May 18 18:43:05 2026
+Host:		c4d3 (x86_64 w/Linux 4.18.0-553.56.1.el8_10.x86_64) (16cores*24cpus*13th Gen Intel(R) Core(TM) i7-13700 30720KB)
+OS:		Rocky Linux 8.10 (Green Obsidian)
+
+License:
+		[18:43:05.046506] Configured Lic search path (21.01-s002): 1717@seesemi.upc.edu:5280@blendedP.upc.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_12198_c4d3_serik.perez_SYCzmd.
+
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading Pegasus 23.11 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> read_db DBS/fp_final/
+
+#% Begin load design ... (date=05/18 18:43:30, mem=1465.6M)
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+Loading design 'mgmt_core_wrapper' saved by 'Innovus' '22.33-s094_1' on 'Sat May 9 12:15:42 2026'.
+Reading default_emulate_libset_max timing library '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_basicCells.lib)
+Read 489 cells in library 'fast_vdd1v0' 
+Reading default_emulate_libset_max timing library '/eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib' ...
+**WARN: (TECHLIB-459):	Appending library 'fast_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /eda/trasllat/GPDK45/gsclib045_all_v4.7/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+Read 16 cells in library 'fast_vdd1v0' 
+Reading default_emulate_libset_max timing library '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/macros/ram_128_1v1_0C.lib' ...
+Read 1 cells in library 'scm_128x32' 
+default_emulate_timing_cond_max
+default_emulate_rc_corner
+
+Loading LEF file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/libs/lef/gsclib045_tech.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/libs/lef/gsclib045_macro.lef ...
+
+Loading LEF file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/libs/lef/gsclib045_multibitsDFF.lef ...
+**WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+
+Loading LEF file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/libs/lef/ram_128.lef ...
+**WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_files variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'clk_i' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'req_i' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'we_i' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[31]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[30]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[29]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[28]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[27]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[26]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[25]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[24]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[23]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[22]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[21]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[20]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[19]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[18]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[17]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[16]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'data_i[15]' in macro 'scm_128x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'data_o[31]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[30]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[29]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[28]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[27]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[26]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[25]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[24]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[23]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[22]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[21]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[20]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[19]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[18]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[17]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[16]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[15]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[14]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[13]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'data_o[12]' in macro 'scm_128x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Loading view definition file from /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/viewDefinition.tcl
+% Begin Load netlist data ... (date=05/18 18:43:31, mem=1491.5M)
+*** Begin netlist parsing (mem=1635.0M) ***
+Pin 'VDD' of cell 'SDFF4RX2' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+Pin 'VSS' of cell 'SDFF4RX2' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+Pin 'VDD' of cell 'SDFF4RX1' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+Pin 'VSS' of cell 'SDFF4RX1' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'scm_128x32' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'scm_128x32' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+Created 506 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1649.055M, initial mem = 642.211M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1649.1M) ***
+% End Load netlist data ... (date=05/18 18:43:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=1505.2M, current mem=1505.2M)
+Top level cell is mgmt_core_wrapper.
+Hooked 506 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mgmt_core_wrapper ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 587 modules.
+** info: there are 12062 stdCell insts.
+** info: there are 3 macros.
+
+*** Memory Usage v#1 (Current mem = 1702.969M, initial mem = 642.211M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Loading preference file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/gui.pref.tcl ...
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(extract_rc_cap_filter_mode option of the set_db) is 'relative_and_coupling' for all engines.
+	The accuracy mode for post_route extract_rc_effort_level low extraction will be set to 'high'.
+	Default value for EffortLevel(extract_rc_effort_level option of the set_db) in post_route extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+add_rings command will ignore shorts while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+**WARN: (IMPMSMV-1809):	Internal pg_pin VDD at 1.1v of cell scm_128x32 does not have external pg_pin with matching voltage in library /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/macros/ram_128_1v1_0C.lib.  Cannot determine the voltage source of this internal power pin.  The signal pin related to it might have incorrect voltage.
+Type 'man IMPMSMV-1809' for more detail.
+Total number of combinational cells: 318
+Total number of sequential cells: 168
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.fp.gz (mem = 1970.0M).
+% Begin Load floorplan data ... (date=05/18 18:43:32, mem=1823.1M)
+*info: reset 13551 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 1696000 995600)
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.fp.spr.gz (Created by Innovus v22.33-s094_1 on Sat May  9 12:15:40 2026, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+30 swires and 218 svias were compressed
+30 swires and 218 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1823.1M, current mem=1823.1M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Delete all existing relative floorplan constraints.
+% End Load floorplan data ... (date=05/18 18:43:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1827.3M, current mem=1827.1M)
+Reading congestion map file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/18 18:43:32, mem=1827.4M)
+% End Load SymbolTable ... (date=05/18 18:43:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1828.6M, current mem=1828.6M)
+Loading place ...
+% Begin Load placement data ... (date=05/18 18:43:32, mem=1828.6M)
+Reading placement file - /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v22.33-s094_1 on Sat May  9 12:15:40 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1974.0M) ***
+Total net length = 3.223e+04 (2.399e+04 8.236e+03) (ext = 3.195e+04)
+% End Load placement data ... (date=05/18 18:43:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1830.6M, current mem=1828.8M)
+Reading PG file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.pg.gz, version#2, (Created by Innovus v22.33-s094_1 on       Sat May  9 12:15:40 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1970.0M) ***
+% Begin Load routing data ... (date=05/18 18:43:32, mem=1829.1M)
+Reading routing file - /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.route.gz.
+Reading Innovus routing data (Created by Innovus v22.33-s094_1 on Sat May  9 12:15:40 2026 Format: 20.1) ...
+*** Total 12857 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1971.0M) ***
+% End Load routing data ... (date=05/18 18:43:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1829.4M, current mem=1829.4M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1974.0M) ***
+add_rings command will ignore shorts while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'CoreSite'.
+Loading preRoute extraction data from directory '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Loading preRoute extracted patterns from file '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper.techData.gz' ...
+Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/libs/mmmc/default_emulate_rc_corner/qrcTechFile'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=05/18 18:43:32, mem=1876.2M)
+source /home/alumnes/s/serik.perez/dnd/synth/caravel-picorv32/R1/DBS/fp_final/mgmt_core_wrapper_power_constraints.tcl
+% End Load power constraints ... (date=05/18 18:43:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1876.2M, current mem=1876.2M)
+default_emulate_delay_corner
+% Begin load AAE data ... (date=05/18 18:43:32, mem=1893.0M)
+% End load AAE data ... (date=05/18 18:43:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1893.0M, current mem=1893.0M)
+Total number of combinational cells: 318
+Total number of sequential cells: 168
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% End load design ... (date=05/18 18:43:33, total cpu=0:00:02.5, real=0:00:03.0, peak res=1923.2M, current mem=1892.9M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200           47  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           32  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPMSMV-1809         1  Internal pg_pin %s at %gv of cell %s doe...
+WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+WARNING   TECHLIB-459          1  Appending library '%s' to the previously...
+*** Message Summary: 124 warning(s), 0 error(s)
+
+0
+@innovus 2> set_db place_global_place_io_pins FALSE
+1 false
+@innovus 3> set_db design_top_routing_layer 4 
+1 4
+@innovus 4> get_distributed_hosts -timeOut
+@innovus 5> get_distributed_hosts -mode
+@innovus 6> set_multi_cpu_usage -local_cpu 4 -cpu_per_remote_host 1 -remote_host 0 -keep_license true
+Setting releaseMultiCpuLicenseMode to false.
+@innovus 7> set_distributed_hosts -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+@innovus 8> set_multi_cpu_usage -local_cpu 4 -cpu_per_remote_host 1 -remote_host 0 -keep_license true
+Setting releaseMultiCpuLicenseMode to false.
+@innovus 9> set_distributed_hosts -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+@innovus 10> set_db place_design_floorplan_mode false
+@innovus 11> place_design 
+*** placeDesign #1 [begin] : totSession cpu/real = 0:00:17.3/0:01:24.3 (0.2), mem = 2387.9M
+**ERROR: (IMPSP-9099):	Scan chains exist in this design but are not defined for 20.24% flops. Placement and timing QoR can be severely impacted in this case!
+It is highly recommend to define scan chains either through input scan def (preferred) or create_scan_chain.
+*** Starting place_design default flow ***
+*** Start delete_buffer_trees ***
+**WARN: (IMPCTE-337):	An unsupported Liberty attribute: max_clock_tree_path - was found on pin clk_i of cell: scm_128x32 in library: scm_128x32. This attribute is not supported by timing analysis and will be ignored. Type 'man IMPCTE-337' for more detailed information.
+Type 'man IMPCTE-337' for more detail.
+Multithreaded Timing Analysis is initialized with 4 threads
+
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 33 instances (buffers/inverters) removed
+*** Finish delete_buffer_trees (0:00:00.5) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Set Default Input Pin Transition as 1 ps.
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.12198 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2598.94 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mgmt_core_wrapper
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (4 T). (MEM=2626.99)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 12824
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3013.24 CPU=0:00:00.4 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=3013.24 CPU=0:00:00.6 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Input Pin Transition as 0.1 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#7 (mem=2971.7M)" ...
+Estimated loop count for BSM: 30016
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.2 mem=3003.7M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.3 mem=3003.7M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 7641 (59.7%) nets
+3		: 1874 (14.6%) nets
+4     -	14	: 2944 (23.0%) nets
+15    -	39	: 332 (2.6%) nets
+40    -	79	: 14 (0.1%) nets
+80    -	159	: 1 (0.0%) nets
+160   -	319	: 1 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 1 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=12031 (0 fixed + 12031 movable) #buf cell=0 #inv cell=652 #block=3 (0 floating + 3 preplaced)
+#ioInst=0 #net=12808 #term=50018 #term/net=3.91, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=685
+stdCell: 12031 single + 0 double + 0 multi
+Total standard cell length = 23.8662 (mm), area = 0.0408 (mm^2)
+Estimated cell power/ground rail width = 0.160 um
+Average module density = 0.272.
+Density for the design = 0.272.
+       = stdcell_area 119331 sites (40811 um^2) / alloc_area 439229 sites (150216 um^2).
+Pin Density = 0.04755.
+            = total # of pins 50018 / total area 1052000.
+Enabling multi-CPU acceleration with 4 CPU(s) for placement
+=== lastAutoLevel = 9 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.109e+05 (1.93e+05 1.18e+05)
+              Est.  stn bbox = 3.496e+05 (2.20e+05 1.29e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3175.9M
+Iteration  2: Total net bbox = 3.109e+05 (1.93e+05 1.18e+05)
+              Est.  stn bbox = 3.496e+05 (2.20e+05 1.29e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3175.9M
+Iteration  3: Total net bbox = 2.425e+05 (1.80e+05 6.26e+04)
+              Est.  stn bbox = 2.888e+05 (2.14e+05 7.45e+04)
+              cpu = 0:00:00.5 real = 0:00:00.0 mem = 3295.9M
+Active setup views:
+    default_emulate_view
+Iteration  4: Total net bbox = 2.455e+05 (1.77e+05 6.81e+04)
+              Est.  stn bbox = 2.928e+05 (2.12e+05 8.12e+04)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 3295.9M
+Iteration  5: Total net bbox = 3.090e+05 (2.35e+05 7.44e+04)
+              Est.  stn bbox = 3.755e+05 (2.85e+05 9.08e+04)
+              cpu = 0:00:01.2 real = 0:00:01.0 mem = 3295.9M
+Iteration  6: Total net bbox = 3.477e+05 (2.40e+05 1.07e+05)
+              Est.  stn bbox = 4.229e+05 (2.90e+05 1.33e+05)
+              cpu = 0:00:01.9 real = 0:00:00.0 mem = 3367.6M
+
+Iteration  7: Total net bbox = 3.530e+05 (2.45e+05 1.08e+05)
+              Est.  stn bbox = 4.289e+05 (2.95e+05 1.34e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3271.6M
+Iteration  8: Total net bbox = 3.530e+05 (2.45e+05 1.08e+05)
+              Est.  stn bbox = 4.289e+05 (2.95e+05 1.34e+05)
+              cpu = 0:00:01.7 real = 0:00:02.0 mem = 3239.6M
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 3.11 MB )
+Iteration  9: Total net bbox = 3.515e+05 (2.34e+05 1.17e+05)
+              Est.  stn bbox = 4.325e+05 (2.86e+05 1.47e+05)
+              cpu = 0:00:01.9 real = 0:00:00.0 mem = 3267.1M
+Iteration 10: Total net bbox = 3.515e+05 (2.34e+05 1.17e+05)
+              Est.  stn bbox = 4.325e+05 (2.86e+05 1.47e+05)
+              cpu = 0:00:01.7 real = 0:00:01.0 mem = 3235.1M
+MH packer: No MH instances from GP
+Iteration 11: Total net bbox = 3.710e+05 (2.52e+05 1.19e+05)
+              Est.  stn bbox = 4.573e+05 (3.09e+05 1.48e+05)
+              cpu = 0:00:03.3 real = 0:00:02.0 mem = 3266.8M
+Iteration 12: Total net bbox = 3.710e+05 (2.52e+05 1.19e+05)
+              Est.  stn bbox = 4.573e+05 (3.09e+05 1.48e+05)
+              cpu = 0:00:01.7 real = 0:00:01.0 mem = 3234.8M
+MH packer: No MH instances from GP
+Iteration 13: Total net bbox = 3.835e+05 (2.63e+05 1.20e+05)
+              Est.  stn bbox = 4.710e+05 (3.21e+05 1.50e+05)
+              cpu = 0:00:04.2 real = 0:00:01.0 mem = 3281.3M
+Iteration 14: Total net bbox = 3.835e+05 (2.63e+05 1.20e+05)
+              Est.  stn bbox = 4.710e+05 (3.21e+05 1.50e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3281.3M
+MH packer: No MH instances from GP
+Iteration 15: Total net bbox = 3.895e+05 (2.66e+05 1.23e+05)
+              Est.  stn bbox = 4.767e+05 (3.24e+05 1.52e+05)
+              cpu = 0:00:02.7 real = 0:00:01.0 mem = 3300.1M
+Iteration 16: Total net bbox = 3.895e+05 (2.66e+05 1.23e+05)
+              Est.  stn bbox = 4.767e+05 (3.24e+05 1.52e+05)
+              cpu = 0:00:01.8 real = 0:00:01.0 mem = 3268.1M
+MH packer: No MH instances from GP
+Iteration 17: Total net bbox = 3.920e+05 (2.68e+05 1.24e+05)
+              Est.  stn bbox = 4.788e+05 (3.25e+05 1.54e+05)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 3303.1M
+Iteration 18: Total net bbox = 3.920e+05 (2.68e+05 1.24e+05)
+              Est.  stn bbox = 4.788e+05 (3.25e+05 1.54e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3303.1M
+*** cost = 3.920e+05 (2.68e+05 1.24e+05) (cpu for global=0:00:24.4) real=0:00:12.0***
+Placement multithread real runtime: 0:00:12.0 with 4 threads.
+Info: 0 clock gating cells identified, 0 (on average) moved 0/10
+Solver runtime cpu: 0:00:15.2 real: 0:00:04.3
+Core Placement runtime cpu: 0:00:16.6 real: 0:00:07.0
+Begin: Reorder Scan Chains
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+End: Reorder Scan Chains
+*** Starting place_detail (0:00:45.2 mem=3303.1M) ***
+Total net bbox length = 3.920e+05 (2.676e+05 1.244e+05) (ext = 6.635e+04)
+Move report: Detail placement moves 12030 insts, mean move: 0.73 um, max move: 32.22 um 
+	Max move on inst (core_g160966): (457.00, 471.83) --> (462.00, 444.60)
+	Runtime: CPU: 0:00:00.9 REAL: 0:00:00.0 MEM: 3391.2MB
+Summary Report:
+Instances move: 12030 (out of 12031 movable)
+Instances flipped: 1
+Mean displacement: 0.73 um
+Max displacement: 32.22 um (Instance: core_g160966) (457.002, 471.826) -> (462, 444.6)
+	Length: 4 sites, height: 1 rows, site name: CoreSite, cell type: INVX3
+Total net bbox length = 3.918e+05 (2.671e+05 1.247e+05) (ext = 6.638e+04)
+Runtime: CPU: 0:00:01.0 REAL: 0:00:00.0 MEM: 3391.2MB
+*** Finished place_detail (0:00:46.1 mem=3391.2M) ***
+*** End of Placement (cpu=0:00:26.7, real=0:00:13.0, mem=3407.2M) ***
+default core: bins with density > 0.750 = 56.90 % ( 722 / 1269 )
+Density distribution unevenness ratio = 24.025%
+*** Free Virtual Timing Model ...(mem=3407.2M)
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   final
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   global_place
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.12198 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mgmt_core_wrapper
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (4 T). (MEM=3407.17)
+Total number of fetched objects 12824
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3605.03 CPU=0:00:00.4 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3605.03 CPU=0:00:00.5 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Metal10 has single uniform track structure
+[NR-eGR] Metal11 has single uniform track structure
+[NR-eGR] Read 1920 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 240
+[NR-eGR] #PG Blockages       : 1920
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Early global route reroute all routable nets
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 12808 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 12808
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 12808 net(s) in layer range [2, 4]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.33% H + 0.00% V. EstWL: 4.580851e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon           OverCon            
+[NR-eGR]                         #Gcell            #Gcell     %Gcell
+[NR-eGR]        Layer             (1-2)               (3)    OverCon
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         1( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)       241( 0.33%)         2( 0.00%)   ( 0.33%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ---------------------------------------------------------------
+[NR-eGR]        Total       242( 0.08%)         2( 0.00%)   ( 0.08%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.33% H + 0.00% V
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.27 sec, Real: 0.26 sec, Curr Mem: 3.23 MB )
+Early Global Route congestion estimation runtime: 0.26 seconds, mem = 3377.0M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Connected 0 must-join pins/ports (post-process)
+[NR-eGR] Total eGR-routed clock nets wire length: 13968um, number of vias: 10658
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR]                  Length (um)    Vias 
+[NR-eGR] -------------------------------------
+[NR-eGR]  Metal1   (1H)             0   49111 
+[NR-eGR]  Metal2   (2V)        106279   75133 
+[NR-eGR]  Metal3   (3H)        291668    4911 
+[NR-eGR]  Metal4   (4V)         73766       0 
+[NR-eGR]  Metal5   (5H)             0       0 
+[NR-eGR]  Metal6   (6V)             0       0 
+[NR-eGR]  Metal7   (7H)             0       0 
+[NR-eGR]  Metal8   (8V)             0       0 
+[NR-eGR]  Metal9   (9H)             0       0 
+[NR-eGR]  Metal10  (10V)            0       0 
+[NR-eGR]  Metal11  (11H)            0       0 
+[NR-eGR] -------------------------------------
+[NR-eGR]           Total       471712  129155 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 391792um
+[NR-eGR] Total length: 471712um, number of vias: 129155
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.08 seconds, mem = 3390.3M
+Tdgp not enabled or already been cleared! skip clearing
+End of congRepair (cpu=0:00:00.5, real=0:00:01.0)
+*** Finishing place_design default flow ***
+**ERROR: (IMPSP-9099):	Scan chains exist in this design but are not defined for 20.24% flops. Placement and timing QoR can be severely impacted in this case!
+It is highly recommend to define scan chains either through input scan def (preferred) or create_scan_chain.
+***** Total cpu  0:0:30
+***** Total real time  0:0:17
+**place_design ... cpu = 0: 0:30, real = 0: 0:17, mem = 3370.3M **
+Tdgp not enabled or already been cleared! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+ERROR     IMPSP-9099           2  Scan chains exist in this design but are...
+WARNING   IMPCTE-337           1  An unsupported Liberty attribute: max_cl...
+*** Message Summary: 4 warning(s), 2 error(s)
+
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   final
+UM: Running design category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          48.35            102                                      place_design
+*** placeDesign #1 [finish] : cpu/real = 0:00:31.1/0:00:17.1 (1.8), totSession cpu/real = 0:00:48.4/0:01:41.4 (0.5), mem = 3378.3M
+@innovus 12> set_layer_preference routeCongest -is_visible 1
+@innovus 13> set_layer_preference routeCongest -is_visible 0
+@innovus 14> set_layer_preference congChan -is_visible 1
+@innovus 15> set_layer_preference routeCongest -is_visible 1
+@innovus 16> set_db design_top_routing_layer 6 
+
+1 6
+@innovus 17> place_design
+
+*** placeDesign #2 [begin] : totSession cpu/real = 0:00:56.7/0:04:48.5 (0.2), mem = 3405.7M
+**ERROR: (IMPSP-9099):	Scan chains exist in this design but are not defined for 20.24% flops. Placement and timing QoR can be severely impacted in this case!
+It is highly recommend to define scan chains either through input scan def (preferred) or create_scan_chain.
+*** Starting place_design default flow ***
+*** Start delete_buffer_trees ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish delete_buffer_trees (0:00:00.3) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.12198 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mgmt_core_wrapper
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (4 T). (MEM=3418.09)
+Total number of fetched objects 12824
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3587.79 CPU=0:00:00.4 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3587.79 CPU=0:00:00.5 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#7 (mem=3578.3M)" ...
+Estimated loop count for BSM: 30016
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.2 mem=3578.3M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.3 mem=3578.3M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 7641 (59.7%) nets
+3		: 1874 (14.6%) nets
+4     -	14	: 2944 (23.0%) nets
+15    -	39	: 332 (2.6%) nets
+40    -	79	: 14 (0.1%) nets
+80    -	159	: 1 (0.0%) nets
+160   -	319	: 1 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 1 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=12031 (0 fixed + 12031 movable) #buf cell=0 #inv cell=652 #block=3 (0 floating + 3 preplaced)
+#ioInst=0 #net=12808 #term=50018 #term/net=3.91, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=685
+stdCell: 12031 single + 0 double + 0 multi
+Total standard cell length = 23.8662 (mm), area = 0.0408 (mm^2)
+Average module density = 0.272.
+Density for the design = 0.272.
+       = stdcell_area 119331 sites (40811 um^2) / alloc_area 439229 sites (150216 um^2).
+Pin Density = 0.04755.
+            = total # of pins 50018 / total area 1052000.
+Enabling multi-CPU acceleration with 4 CPU(s) for placement
+=== lastAutoLevel = 9 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.109e+05 (1.93e+05 1.18e+05)
+              Est.  stn bbox = 3.496e+05 (2.20e+05 1.29e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3423.5M
+Iteration  2: Total net bbox = 3.109e+05 (1.93e+05 1.18e+05)
+              Est.  stn bbox = 3.496e+05 (2.20e+05 1.29e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3423.5M
+Iteration  3: Total net bbox = 2.425e+05 (1.80e+05 6.26e+04)
+              Est.  stn bbox = 2.888e+05 (2.14e+05 7.45e+04)
+              cpu = 0:00:00.5 real = 0:00:00.0 mem = 3542.6M
+Active setup views:
+    default_emulate_view
+Iteration  4: Total net bbox = 2.455e+05 (1.77e+05 6.81e+04)
+              Est.  stn bbox = 2.928e+05 (2.12e+05 8.12e+04)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 3542.6M
+Iteration  5: Total net bbox = 3.090e+05 (2.35e+05 7.44e+04)
+              Est.  stn bbox = 3.755e+05 (2.85e+05 9.08e+04)
+              cpu = 0:00:01.2 real = 0:00:00.0 mem = 3542.6M
+Iteration  6: Total net bbox = 3.477e+05 (2.40e+05 1.07e+05)
+              Est.  stn bbox = 4.229e+05 (2.90e+05 1.33e+05)
+              cpu = 0:00:01.8 real = 0:00:00.0 mem = 3611.2M
+
+Iteration  7: Total net bbox = 3.530e+05 (2.45e+05 1.08e+05)
+              Est.  stn bbox = 4.289e+05 (2.95e+05 1.34e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3515.2M
+Iteration  8: Total net bbox = 3.530e+05 (2.45e+05 1.08e+05)
+              Est.  stn bbox = 4.289e+05 (2.95e+05 1.34e+05)
+              cpu = 0:00:01.7 real = 0:00:02.0 mem = 3483.2M
+[NR-eGR] Started Early Global Route kernel ( Curr Mem: 3.35 MB )
+Iteration  9: Total net bbox = 3.515e+05 (2.34e+05 1.17e+05)
+              Est.  stn bbox = 4.325e+05 (2.86e+05 1.47e+05)
+              cpu = 0:00:01.9 real = 0:00:00.0 mem = 3505.9M
+Iteration 10: Total net bbox = 3.515e+05 (2.34e+05 1.17e+05)
+              Est.  stn bbox = 4.325e+05 (2.86e+05 1.47e+05)
+              cpu = 0:00:01.7 real = 0:00:02.0 mem = 3473.9M
+MH packer: No MH instances from GP
+Iteration 11: Total net bbox = 3.555e+05 (2.36e+05 1.20e+05)
+              Est.  stn bbox = 4.392e+05 (2.88e+05 1.51e+05)
+              cpu = 0:00:02.0 real = 0:00:00.0 mem = 3503.4M
+Iteration 12: Total net bbox = 3.555e+05 (2.36e+05 1.20e+05)
+              Est.  stn bbox = 4.392e+05 (2.88e+05 1.51e+05)
+              cpu = 0:00:01.7 real = 0:00:02.0 mem = 3471.4M
+MH packer: No MH instances from GP
+Iteration 13: Total net bbox = 3.603e+05 (2.40e+05 1.21e+05)
+              Est.  stn bbox = 4.445e+05 (2.92e+05 1.52e+05)
+              cpu = 0:00:02.7 real = 0:00:00.0 mem = 3512.7M
+Iteration 14: Total net bbox = 3.603e+05 (2.40e+05 1.21e+05)
+              Est.  stn bbox = 4.445e+05 (2.92e+05 1.52e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3512.7M
+MH packer: No MH instances from GP
+Iteration 15: Total net bbox = 3.645e+05 (2.42e+05 1.23e+05)
+              Est.  stn bbox = 4.482e+05 (2.94e+05 1.54e+05)
+              cpu = 0:00:01.5 real = 0:00:01.0 mem = 3526.0M
+Iteration 16: Total net bbox = 3.645e+05 (2.42e+05 1.23e+05)
+              Est.  stn bbox = 4.482e+05 (2.94e+05 1.54e+05)
+              cpu = 0:00:01.7 real = 0:00:01.0 mem = 3494.0M
+MH packer: No MH instances from GP
+Iteration 17: Total net bbox = 3.691e+05 (2.44e+05 1.25e+05)
+              Est.  stn bbox = 4.525e+05 (2.96e+05 1.56e+05)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 3526.0M
+Iteration 18: Total net bbox = 3.691e+05 (2.44e+05 1.25e+05)
+              Est.  stn bbox = 4.525e+05 (2.96e+05 1.56e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 3526.0M
+*** cost = 3.691e+05 (2.44e+05 1.25e+05) (cpu for global=0:00:20.2) real=0:00:10.0***
+Placement multithread real runtime: 0:00:10.0 with 4 threads.
+Info: 0 clock gating cells identified, 0 (on average) moved 0/10
+Solver runtime cpu: 0:00:11.3 real: 0:00:03.2
+Core Placement runtime cpu: 0:00:12.4 real: 0:00:03.0
+Begin: Reorder Scan Chains
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+End: Reorder Scan Chains
+*** Starting place_detail (0:01:20 mem=3526.0M) ***
+Total net bbox length = 3.691e+05 (2.442e+05 1.248e+05) (ext = 6.324e+04)
+Move report: Detail placement moves 12031 insts, mean move: 0.72 um, max move: 20.05 um 
+	Max move on inst (core_g248486): (416.97, 427.48) --> (437.00, 427.50)
+	Runtime: CPU: 0:00:01.0 REAL: 0:00:00.0 MEM: 3478.0MB
+Summary Report:
+Instances move: 12031 (out of 12031 movable)
+Instances flipped: 0
+Mean displacement: 0.72 um
+Max displacement: 20.05 um (Instance: core_g248486) (416.967, 427.481) -> (437, 427.5)
+	Length: 2 sites, height: 1 rows, site name: CoreSite, cell type: INVX1
+Total net bbox length = 3.683e+05 (2.433e+05 1.250e+05) (ext = 6.324e+04)
+Runtime: CPU: 0:00:01.0 REAL: 0:00:00.0 MEM: 3478.0MB
+*** Finished place_detail (0:01:20 mem=3478.0M) ***
+*** End of Placement (cpu=0:00:22.4, real=0:00:11.0, mem=3496.0M) ***
+default core: bins with density > 0.750 = 54.53 % ( 692 / 1269 )
+Density distribution unevenness ratio = 23.678%
+*** Free Virtual Timing Model ...(mem=3496.0M)
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   final
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   global_place
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.12198 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: mgmt_core_wrapper
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (4 T). (MEM=3501.03)
+Total number of fetched objects 12824
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3699.81 CPU=0:00:00.4 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3699.81 CPU=0:00:00.5 REAL=0:00:00.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Metal10 has single uniform track structure
+[NR-eGR] Metal11 has single uniform track structure
+[NR-eGR] Read 3276 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 252
+[NR-eGR] #PG Blockages       : 3276
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Early global route reroute all routable nets
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 12808 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 12808
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 12808 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.349436e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-2)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)        35( 0.05%)   ( 0.05%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total        35( 0.01%)   ( 0.01%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[NR-eGR] Finished Early Global Route kernel ( CPU: 0.26 sec, Real: 0.25 sec, Curr Mem: 3.31 MB )
+Early Global Route congestion estimation runtime: 0.25 seconds, mem = 3480.8M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Connected 0 must-join pins/ports (post-process)
+[NR-eGR] Total eGR-routed clock nets wire length: 13634um, number of vias: 10460
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR]                  Length (um)    Vias 
+[NR-eGR] -------------------------------------
+[NR-eGR]  Metal1   (1H)             0   49111 
+[NR-eGR]  Metal2   (2V)        100528   75088 
+[NR-eGR]  Metal3   (3H)        165532    5316 
+[NR-eGR]  Metal4   (4V)         74392    2232 
+[NR-eGR]  Metal5   (5H)        105332      27 
+[NR-eGR]  Metal6   (6V)           372       0 
+[NR-eGR]  Metal7   (7H)             0       0 
+[NR-eGR]  Metal8   (8V)             0       0 
+[NR-eGR]  Metal9   (9H)             0       0 
+[NR-eGR]  Metal10  (10V)            0       0 
+[NR-eGR]  Metal11  (11H)            0       0 
+[NR-eGR] -------------------------------------
+[NR-eGR]           Total       446157  131774 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 368346um
+[NR-eGR] Total length: 446157um, number of vias: 131774
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.08 seconds, mem = 3494.1M
+Tdgp not enabled or already been cleared! skip clearing
+End of congRepair (cpu=0:00:00.5, real=0:00:01.0)
+*** Finishing place_design default flow ***
+**ERROR: (IMPSP-9099):	Scan chains exist in this design but are not defined for 20.24% flops. Placement and timing QoR can be severely impacted in this case!
+It is highly recommend to define scan chains either through input scan def (preferred) or create_scan_chain.
+***** Total cpu  0:0:25
+***** Total real time  0:0:14
+**place_design ... cpu = 0: 0:25, real = 0: 0:14, mem = 3474.1M **
+Tdgp not enabled or already been cleared! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+ERROR     IMPSP-9099           2  Scan chains exist in this design but are...
+*** Message Summary: 3 warning(s), 2 error(s)
+
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   final
+UM: Running design category ...
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:          34.34            201                                      place_design
+*** placeDesign #2 [finish] : cpu/real = 0:00:26.0/0:00:14.0 (1.9), totSession cpu/real = 0:01:22.7/0:05:02.4 (0.3), mem = 3482.1M
+0
+@innovus 18> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon May 18 19:18:38 2026
+  Total CPU time:     0:02:11
+  Total real time:    0:35:34
+  Peak memory (main): 2762.32MB
+
+
+*** Memory Usage v#1 (Current mem = 3492.840M, initial mem = 642.211M) ***
+*** Message Summary: 131 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:11, real=0:35:33, mem=3492.8M) ---

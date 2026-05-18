@@ -1,0 +1,39 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.33-s094_1, built Fri Aug 25 16:48:21 PDT 2023
+Options:	-stylus 
+Date:		Mon May 18 18:06:09 2026
+Host:		c4d3 (x86_64 w/Linux 4.18.0-553.56.1.el8_10.x86_64) (16cores*24cpus*13th Gen Intel(R) Core(TM) i7-13700 30720KB)
+OS:		Rocky Linux 8.10 (Green Obsidian)
+
+License:
+		[18:06:09.046530] Configured Lic search path (21.01-s002): 1717@seesemi.upc.edu:5280@blendedP.upc.edu
+
+		invs	Innovus Implementation System	22.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_5533_c4d3_serik.perez_TpjQON.
+
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[INFO] Loading Pegasus 23.11 fill procedures
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> quit
+
+invalid command name "quit"
+invalid command name "quit"
+@innovus 2> 
+
+@innovus 2> 
+@innovus 2> 
+
+@innovus 2> Innovus terminated by user interrupt.
+
+*** Memory Usage v#1 (Current mem = 1578.160M, initial mem = 642.211M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:15.0, real=0:01:49, mem=1578.2M) ---
