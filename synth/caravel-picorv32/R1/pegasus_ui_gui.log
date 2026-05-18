@@ -1,0 +1,5 @@
+2026/05/09 10:55:12 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/05/09 10:55:12 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/05/09 10:55:13 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/05/09 10:55:13 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+X connection to :0 broken (explicit kill or server shutdown).

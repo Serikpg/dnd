@@ -1,0 +1,24 @@
+catch { setDesignMode -bottomRoutingLayer Metal2 }
+catch { setDesignMode -powerEffort none }
+catch { setDesignMode -process 45 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -asyncChecks noAsync }
+catch { setOptMode -opt_leakage_to_dynamic_ratio 1 }
+catch { setExtractRCMode  -layerIndependent 1 -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.1 }
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -routeExpDesignModeBottomRoutingLayer 2}
+
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setDelayCalMode -engine aae }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setFPlanMode -autoSyncMasterClone "" }
+catch { setFPlanMode -cellsForExtraSites {} }
+catch { setFPlanMode -defaultRowPatternSite {} }
+catch { setFPlanMode -defaultTechSite CoreSite }
+catch { setFPlanMode -extraSites {} }
+catch { setFPlanMode -firstRowSiteIndex 0 }
+catch { setFPlanMode -lastRowSiteIndex -1 }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }
